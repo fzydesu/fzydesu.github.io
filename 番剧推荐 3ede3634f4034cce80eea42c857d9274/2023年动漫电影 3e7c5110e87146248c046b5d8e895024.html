@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>2023年动漫电影</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="3e7c5110-e871-4624-8c04-6b5d8e895024" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/nasa_orion_nebula.jpg" style="object-position:center 0%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🎬</span></div><h1 class="page-title">2023年动漫电影</h1><p class="page-description"></p></header><div class="page-body"><table id="52e230a4-e1bd-479f-b8e1-98734a29acbc" class="simple-table"><tbody><tr id="cfcddfe3-ebac-40bf-b8b5-ca932577fa9f"><td id="aRae" class="" style="width:82px">上映日</td><td id="kUeo" class="" style="width:238.671875px">译名</td><td id="c&gt;PR" class="" style="width:251.65625px">原名</td><td id="HhbS" class="">制作公司</td></tr><tr id="b1403711-c6cb-416a-9672-661faec37b9b"><td id="aRae" class="" style="width:82px">1月6日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%90%8D%E5%81%B5%E6%8E%A2%E6%9F%AF%E5%8D%97%EF%BC%9A%E9%BB%91%E9%90%B5%E7%9A%84%E9%AD%9A%E5%BD%B1">名侦探柯南：灰原哀物语～黑铁的神秘列车～</a></td><td id="c&gt;PR" class="" style="width:251.65625px">名探偵コナン 灰原哀物語～黒鉄のミステリートレイン～</td><td id="HhbS" class="">TMS娱乐</td></tr><tr id="2a45056c-e888-4679-9698-ff1d84cc672d"><td id="aRae" class="" style="width:82px">1月13日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%A6%96%E6%80%AA%E6%89%8B%E9%8C%B6%E2%99%AA">妖怪手表♪ 吉胖喵VS小石狮 超级大决战喵</a></td><td id="c&gt;PR" class="" style="width:251.65625px">妖怪ウォッチ♪ ジバニャンVSコマさん もんげー大決戦だニャン</td><td id="HhbS" class="">OLM</td></tr><tr id="1fa22fcf-3fb8-4039-af42-5b6c0b85cb84"><td id="aRae" class="" style="width:82px">1月20日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E8%92%BC%E7%A9%B9%E4%B9%8B%E6%88%B0%E7%A5%9E">苍穹之战神 BEHIND THE LINE</a></td><td id="c&gt;PR" class="" style="width:251.65625px">蒼穹のファフナー BEHIND THE LINE</td><td id="HhbS" class="">Production I.G</td></tr><tr id="05752bad-cc13-43e0-af97-c1e01db7caa1"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%81%B6%E5%83%8F%E5%AD%B8%E5%9C%92_(%E5%8B%95%E7%95%AB)">偶像学园！ 10th STORY ～通往未来的STARWAY～</a><a href="https://zh.wikipedia.org/wiki/2023%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_note-315">[注 17]</a></td><td id="c&gt;PR" class="" style="width:251.65625px">アイカツ！ 10th STORY ～未来へのSTARWAY～</td><td id="HhbS" class="">BN Pictures</td></tr><tr id="430fc781-6472-40f9-b8ae-5e7cf84271e4"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/SSSS.GRIDMAN">剧场总集篇“SSSS.GRIDMAN”</a></td><td id="c&gt;PR" class="" style="width:251.65625px">劇場総集編「SSSS.GRIDMAN」</td><td id="HhbS" class="">TRIGGER</td></tr><tr id="71914f54-9d67-4531-ae7d-ea3e3003ce95"><td id="aRae" class="" style="width:82px">1月27日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E9%87%91%E4%B9%8B%E5%9C%8B_%E6%B0%B4%E4%B9%8B%E5%9C%8B">金之国 水之国</a></td><td id="c&gt;PR" class="" style="width:251.65625px">金の国 水の国</td><td id="HhbS" class="">MADHOUSE</td></tr><tr id="1f547c95-291b-4026-8514-859f79c76727"><td id="aRae" class="" style="width:82px">2月3日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E9%AC%BC%E6%BB%85%E4%B9%8B%E5%88%83_%E5%88%80%E5%8C%A0%E6%9D%91%E7%AF%87">“鬼灭之刃”上弦集结，前进刀匠村</a></td><td id="c&gt;PR" class="" style="width:251.65625px">「鬼滅の刃」上弦集結、そして刀鍛冶の里へ</td><td id="HhbS" class="">ufotable</td></tr><tr id="904c3da4-cde6-43ee-bb1b-cc1afc73dec1"><td id="aRae" class="" style="width:82px">2月17日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/BLUE_GIANT_%E8%97%8D%E8%89%B2%E5%B7%A8%E6%98%9F">BLUE GIANT 蓝色巨星</a></td><td id="c&gt;PR" class="" style="width:251.65625px">BLUE GIANT</td><td id="HhbS" class="">NUT</td></tr><tr id="4df9b675-3122-4229-9934-522a2194321f"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E4%BD%90%E4%BD%90%E6%9C%A8%E8%88%87%E5%AE%AE%E9%87%8E">电影版 佐佐木与宫野－毕业篇－</a><a href="https://zh.wikipedia.org/wiki/2023%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_note-321">[注 18]</a></td><td id="c&gt;PR" class="" style="width:251.65625px">映画 佐々木と宮野ー卒業編ー</td><td id="HhbS" class="">Studio DEEN</td></tr><tr id="3e24a630-2604-4058-9d27-d8e2f81142b7"><td id="aRae" class="" style="width:82px">3月3日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E9%9B%84%E8%88%87%E5%A4%A9%E7%A9%BA%E7%9A%84%E7%90%86%E6%83%B3%E9%84%89">哆啦A梦电影：大雄与天空的理想乡</a></td><td id="c&gt;PR" class="" style="width:251.65625px">映画ドラえもん のび太と空の理想郷</td><td id="HhbS" class="">新锐动画</td></tr><tr id="89fff7f1-589a-443a-abbb-8eecb91fe3d1"><td id="aRae" class="" style="width:82px">3月10日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/SSSS.DYNAZENON">剧场总集篇“SSSS.DYNAZENON”</a></td><td id="c&gt;PR" class="" style="width:251.65625px">劇場総集編「SSSS.DYNAZENON」</td><td id="HhbS" class="">TRIGGER</td></tr><tr id="d253ced9-7e5c-41a7-9efb-0209db281373"><td id="aRae" class="" style="width:82px">3月24日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/w/index.php?title=From_ARGONAVIS&amp;action=edit&amp;redlink=1">剧场版ARGONAVIS AXIA</a></td><td id="c&gt;PR" class="" style="width:251.65625px">劇場版アルゴナビス AXIA</td><td id="HhbS" class="">三次元</td></tr><tr id="0c1dba54-b4cb-4ccc-a4d4-689e134c6edf"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/GRIDMAN_UNIVERSE">GRIDMAN UNIVERSE</a></td><td id="c&gt;PR" class="" style="width:251.65625px">グリッドマン ユニバース</td><td id="HhbS" class="">TRIGGER</td></tr><tr id="37ac5bf6-0268-4e14-aa72-3c423050b2cf"><td id="aRae" class="" style="width:82px">3月31日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E7%95%99%E7%BA%A7%E9%AD%94%E5%A5%B3_%E9%A3%8E%E5%98%89%E4%B8%8E%E9%BB%91%E4%B9%8B%E9%AD%94%E5%A5%B3">留级魔女 风嘉与黑暗魔女</a></td><td id="c&gt;PR" class="" style="width:251.65625px">らくだい魔女 フウカと闇の魔女</td><td id="HhbS" class="">Production I.G</td></tr><tr id="2fa6509d-6cce-4b83-8953-0407070b887d"><td id="aRae" class="" style="width:82px">4月7日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/Princess_Principal">Princess Principal Crown Handler 第3章</a></td><td id="c&gt;PR" class="" style="width:251.65625px">プリンセス・プリンシパル Crown Handler 第3章</td><td id="HhbS" class="">Actas</td></tr><tr id="c90f07c2-d9b3-4a38-ac0d-316884de6d20"><td id="aRae" class="" style="width:82px">4月14日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%90%8D%E5%81%B5%E6%8E%A2%E6%9F%AF%E5%8D%97%EF%BC%9A%E9%BB%91%E9%90%B5%E7%9A%84%E9%AD%9A%E5%BD%B1">名侦探柯南：黑铁的鱼影</a></td><td id="c&gt;PR" class="" style="width:251.65625px">名探偵コナン 黒鉄の魚影</td><td id="HhbS" class="">TMS/第一工作室</td></tr><tr id="d3958514-8903-4bcc-8bba-0075b85d6dd7"><td id="aRae" class="" style="width:82px">5月12日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/PSYCHO-PASS">剧场版 心理测量者 PROVIDENCE</a></td><td id="c&gt;PR" class="" style="width:251.65625px">劇場版 PSYCHO-PASS サイコパス PROVIDENCE</td><td id="HhbS" class="">Production I.G</td></tr><tr id="fbf078cd-2df8-42b7-81a2-3fbc0457ad11"><td id="aRae" class="" style="width:82px">5月19日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E6%B0%B8%E4%B9%85%E5%B0%91%E5%B9%B4_Eternal_Boys">永久少年 Eternal Boys 特别编辑版</a></td><td id="c&gt;PR" class="" style="width:251.65625px">『永久少年 Eternal Boys』特別編集版</td><td id="HhbS" class="">LIDENFILMS</td></tr><tr id="cd906e7f-74c0-49c3-b0cd-2e30846883f6"><td id="aRae" class="" style="width:82px">5月20日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/IDOLiSH7">剧场版IDOLiSH7-偶像星愿- LIVE 4bit BEYOND THE PERiOD</a></td><td id="c&gt;PR" class="" style="width:251.65625px">劇場版アイドリッシュセブン LIVE 4bit BEYOND THE PERiOD</td><td id="HhbS" class="">Orange</td></tr><tr id="8b79a718-f68e-47f3-b0c4-2150eaf7d7e0"><td id="aRae" class="" style="width:82px">5月26日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/w/index.php?title=%E9%98%BF%E5%AF%86%E5%93%A9%E5%A4%9A%E7%9A%84%E9%A5%97%E5%AE%B4&amp;action=edit&amp;redlink=1">阿密哩多的飨宴</a></td><td id="c&gt;PR" class="" style="width:251.65625px">アムリタの饗宴</td><td id="HhbS" class=""></td></tr><tr id="a9e2a336-c266-4a4e-ac8a-ede9bf02d1bc"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/w/index.php?title=Collar%C3%97Malice&amp;action=edit&amp;redlink=1">剧场版 Collar×Malice -deep cover- 前篇</a></td><td id="c&gt;PR" class="" style="width:251.65625px">劇場版 Collar×Malice -deep cover- 前編</td><td id="HhbS" class="">Studio DEEN</td></tr><tr id="8191a088-c2fe-4aef-8113-e6e940cf2b31"><td id="aRae" class="" style="width:82px">6月9日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%8A%87%E5%A0%B4%E7%89%88%E7%BE%8E%E5%B0%91%E5%A5%B3%E6%88%B0%E5%A3%ABCosmos">剧场版美少女战士Cosmos 前篇</a></td><td id="c&gt;PR" class="" style="width:251.65625px">劇場版「美少女戦士セーラームーンCosmos」《前編》</td><td id="HhbS" class="">东映动画、Studio DEEN</td></tr><tr id="cf610951-ed57-45de-95c3-9ec0baef19c2"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E6%B0%B8%E4%B9%85%E5%B0%91%E5%B9%B4_Eternal_Boys">永久少年 Eternal Boys NEXT STAGE</a></td><td id="c&gt;PR" class="" style="width:251.65625px">永久少年 Eternal Boys NEXT STAGE</td><td id="HhbS" class="">LIDENFILMS</td></tr><tr id="3ff4d5fb-3cf8-46a4-9a51-8af79780fbb4"><td id="aRae" class="" style="width:82px">6月16日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E9%BB%91%E8%89%B2%E4%BA%94%E8%91%89%E8%8D%89%EF%BC%9A%E9%AD%94%E6%B3%95%E5%B8%9D%E4%B9%8B%E5%8A%8D">黑色五叶草：魔法帝之剑</a></td><td id="c&gt;PR" class="" style="width:251.65625px">ブラッククローバー 魔法帝の剣</td><td id="HhbS" class="">studio pierrot</td></tr><tr id="9bc23e50-da3a-4ed3-8f67-bdcaaf7953a2"><td id="aRae" class="" style="width:82px">6月23日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/w/index.php?title=Collar%C3%97Malice&amp;action=edit&amp;redlink=1">剧场版 Collar×Malice -deep cover- 后篇</a></td><td id="c&gt;PR" class="" style="width:251.65625px">劇場版 Collar×Malice -deep cover- 後編</td><td id="HhbS" class="">Studio DEEN</td></tr><tr id="632052bc-9020-4248-8059-b657a85759df"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E9%9D%92%E6%98%A5%E8%B1%AC%E9%A0%AD%E5%B0%91%E5%B9%B4%E4%B8%8D%E6%9C%83%E5%A4%A2%E5%88%B0%E5%AC%8C%E6%86%90%E5%A4%96%E5%87%BA%E5%A6%B9">青春猪头少年不会梦到娇怜外出妹</a></td><td id="c&gt;PR" class="" style="width:251.65625px">青春ブタ野郎はおでかけシスターの夢を見ない</td><td id="HhbS" class="">CloverWorks</td></tr><tr id="05274e56-0a21-43ce-93fd-7fdf22845c59"><td id="aRae" class="" style="width:82px">6月30日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E9%BA%B5%E5%8C%85%E8%B6%85%E4%BA%BA%EF%BC%9A%E9%9C%B2%E5%AF%B6%E8%8E%89%E8%88%87%E7%AA%A9%E5%BF%83%E7%9A%84%E7%A6%AE%E7%89%A9">面包超人：露宝莉与窝心的礼物</a></td><td id="c&gt;PR" class="" style="width:251.65625px">それいけ！アンパンマン ロボリィとぽかぽかプレゼント</td><td id="HhbS" class="">TMS娱乐</td></tr><tr id="e817fa04-4c9f-4792-8327-32e30eba4353"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%8A%87%E5%A0%B4%E7%89%88%E7%BE%8E%E5%B0%91%E5%A5%B3%E6%88%B0%E5%A3%ABCosmos">剧场版美少女战士Cosmos 后篇</a></td><td id="c&gt;PR" class="" style="width:251.65625px">劇場版「美少女戦士セーラームーンCosmos」《後編》</td><td id="HhbS" class="">东映动画、Studio DEEN</td></tr><tr id="dea126e6-2490-45f4-8d94-3c7b8512ef92"><td id="aRae" class="" style="width:82px">7月7日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E6%83%A1%E9%9D%88%E5%8F%A4%E5%A0%A1%EF%BC%9A%E6%AD%BB%E4%BA%A1%E5%B3%B6">生化危机：死亡岛</a></td><td id="c&gt;PR" class="" style="width:251.65625px">バイオハザード：デスアイランド</td><td id="HhbS" class="">Quebico</td></tr><tr id="b3a14c49-ffea-409c-95eb-c1e783d43978"><td id="aRae" class="" style="width:82px">7月14日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E8%92%BC%E9%B7%BA%E8%88%87%E5%B0%91%E5%B9%B4">苍鹭与少年</a></td><td id="c&gt;PR" class="" style="width:251.65625px">君たちはどう生きるか</td><td id="HhbS" class="">吉卜力工作室</td></tr><tr id="e3b35749-a747-4e4c-9a6f-3db7ae3793de"><td id="aRae" class="" style="width:82px">7月21日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%B0%8F%E6%9D%BE%E5%85%88%E7%94%9F">小松先生～灵魂章鱼烧派对和传说过夜派对～</a></td><td id="c&gt;PR" class="" style="width:251.65625px">おそ松さん～魂のたこ焼きパーティーと伝説のお泊り会～</td><td id="HhbS" class="">studio pierrot</td></tr><tr id="11016465-82a2-41d4-af8c-35bc152fdc93"><td id="aRae" class="" style="width:82px">8月4日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E6%96%B0%E6%AC%A1%E5%85%83%EF%BC%81%E8%A0%9F%E7%AD%86%E5%B0%8F%E6%96%B0THE_MOVIE_%E8%B6%85%E8%83%BD%E5%8A%9B%E5%A4%A7%E6%B1%BA%E6%88%B0_%EF%BD%9E%E9%A3%9B%E5%90%A7%EF%BC%81%E6%89%8B%E5%8D%B7%E5%A3%BD%E5%8F%B8%EF%BD%9E">新次元！蜡笔小新THE MOVIE 超能力大决战 ～飞吧！手卷寿司～</a></td><td id="c&gt;PR" class="" style="width:251.65625px">しん次元！クレヨンしんちゃんTHE MOVIE 超能力大決戦 ～とべとべ手巻き寿司～</td><td id="HhbS" class="">新锐动画</td></tr><tr id="8c8c7335-69bb-401b-95ba-247d5edac922"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%90%B9%E9%9F%BF%E5%90%A7%EF%BC%81%E4%B8%8A%E4%BD%8E%E9%9F%B3%E8%99%9F">特别篇 吹响吧！上低音号～合奏团竞赛篇～</a></td><td id="c&gt;PR" class="" style="width:251.65625px">特別編 響け！ユーフォニアム～アンサンブルコンテスト～</td><td id="HhbS" class="">京都动画</td></tr><tr id="6e145688-1720-4cf9-ae68-670ee0adc4be"><td id="aRae" class="" style="width:82px">8月8日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E4%B8%83%E5%A4%A7%E7%BD%AA_(%E6%BC%AB%E7%95%AB)">七大罪：爱丁堡的恩怨 2</a></td><td id="c&gt;PR" class="" style="width:251.65625px">七つの大罪 怨嗟のエジンバラ 後編</td><td id="HhbS" class="">Alfred Imageworks、Marvy Jack</td></tr><tr id="cd8bc9e9-2780-402f-92ba-956ef05a1ff4"><td id="aRae" class="" style="width:82px">8月18日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%81%B6%E5%83%8F%E5%A4%A7%E5%B8%AB_%E7%99%BE%E8%90%AC%E4%BA%BA%E6%BC%94%E5%94%B1%E6%9C%83%EF%BC%81">偶像大师 百万人演唱会！第1幕</a></td><td id="c&gt;PR" class="" style="width:251.65625px">アイドルマスター ミリオンライブ！第1幕</td><td id="HhbS" class="">白组</td></tr><tr id="00b86136-cc34-4b7d-8099-d4ccf2df50b6"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E6%B2%99%E6%BC%A0%E5%A4%A7%E5%86%92%E9%9A%AA">沙漠大冒险</a></td><td id="c&gt;PR" class="" style="width:251.65625px">SAND LAND</td><td id="HhbS" class="">日昇动画、神风动画、ANIMA</td></tr><tr id="633bfc33-f8ec-46b2-9e3a-fc757dc2f2a1"><td id="aRae" class="" style="width:82px">9月8日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%81%B6%E5%83%8F%E5%A4%A7%E5%B8%AB_%E7%99%BE%E8%90%AC%E4%BA%BA%E6%BC%94%E5%94%B1%E6%9C%83%EF%BC%81">偶像大师 百万人演唱会！第2幕</a></td><td id="c&gt;PR" class="" style="width:251.65625px">アイドルマスター ミリオンライブ！第2幕</td><td id="HhbS" class="">白组</td></tr><tr id="f74d7e56-4ba6-411f-b35c-9b72fe0814a8"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%9F%8E%E5%B8%82%E7%8D%B5%E4%BA%BA">剧场版城市猎人 天使之泪</a></td><td id="c&gt;PR" class="" style="width:251.65625px">劇場版シティーハンター 天使の涙</td><td id="HhbS" class="">日昇动画、The Answer Studio</td></tr><tr id="2457035d-557b-4572-bc0e-c0214562dc73"><td id="aRae" class="" style="width:82px">9月15日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%85%89%E4%B9%8B%E7%BE%8E%E5%B0%91%E5%A5%B3_All_Stars_F">电影 光之美少女 All Stars F</a></td><td id="c&gt;PR" class="" style="width:251.65625px">映画プリキュアオールスターズF</td><td id="HhbS" class="">东映动画</td></tr><tr id="0067076f-7112-490e-8d06-7a49e3f5d1c9"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E6%84%9B%E9%BA%97%E7%B5%B2%E8%88%87%E7%89%B9%E8%95%BE%E7%B5%B2%E7%9A%84%E8%99%9B%E5%B9%BB%E5%B7%A5%E5%BB%A0">爱丽丝与特蕾丝的虚幻工厂</a></td><td id="c&gt;PR" class="" style="width:251.65625px">アリスとテレスのまぼろし工場</td><td id="HhbS" class="">MAPPA</td></tr><tr id="73208640-7d02-421a-bc6e-f48a3efcf665"><td id="aRae" class="" style="width:82px">9月29日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%81%B6%E5%83%8F%E5%A4%A7%E5%B8%AB_%E7%99%BE%E8%90%AC%E4%BA%BA%E6%BC%94%E5%94%B1%E6%9C%83%EF%BC%81">偶像大师 百万人演唱会！第3幕</a></td><td id="c&gt;PR" class="" style="width:251.65625px">アイドルマスター ミリオンライブ！第3幕</td><td id="HhbS" class="">白组</td></tr><tr id="5f8c85df-7223-4276-a58b-7288bba1f828"><td id="aRae" class="" style="width:82px">10月6日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%B0%91%E5%A5%B3%E8%88%87%E6%88%B0%E8%BB%8A">少女与战车 最终章 第4话</a></td><td id="c&gt;PR" class="" style="width:251.65625px">ガールズ&amp;パンツァー 最終章 第4話</td><td id="HhbS" class="">Actas</td></tr><tr id="4b0f77ad-4c21-492d-b257-442a58c65caf"><td id="aRae" class="" style="width:82px">10月13日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%A4%A7%E9%9B%AA%E6%B5%B7%E7%9A%84%E5%8D%A1%E7%B4%8D">大雪海的卡纳 星之贤者</a></td><td id="c&gt;PR" class="" style="width:251.65625px">大雪海のカイナ ほしのけんじゃ</td><td id="HhbS" class="">Polygon Pictures</td></tr><tr id="35942d53-bd52-4209-8379-5258d7b1883a"><td id="aRae" class="" style="width:82px">10月20日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/w/index.php?title=%E5%8C%97%E6%A5%B5%E7%99%BE%E8%B2%A8%E5%BA%97%E7%9A%84%E6%8E%A5%E5%BE%85%E5%93%A1&amp;action=edit&amp;redlink=1">北极百货店的接待员</a></td><td id="c&gt;PR" class="" style="width:251.65625px">北極百貨店のコンシェルジュさん</td><td id="HhbS" class="">Production I.G</td></tr><tr id="058723bb-147f-458f-bc61-f5b254d9cc7a"><td id="aRae" class="" style="width:82px">10月27日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%81%B6%E5%83%8F%E5%A4%A7%E5%B8%AB_%E9%96%83%E8%80%80%E8%89%B2%E5%BD%A9">偶像大师 闪耀色彩 第1章</a></td><td id="c&gt;PR" class="" style="width:251.65625px">アイドルマスター シャイニーカラーズ 第1章</td><td id="HhbS" class="">Polygon Pictures</td></tr><tr id="830231b1-2cf6-4ac7-9d9f-8764f01ce361"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E6%95%B8%E7%A2%BC%E5%AF%B6%E8%B2%9D02_THE_BEGINNING">数码宝贝02：起源</a></td><td id="c&gt;PR" class="" style="width:251.65625px">デジモンアドベンチャー02 THE BEGINNING</td><td id="HhbS" class="">东映动画、东映、梦太公司</td></tr><tr id="0b7e3621-5786-400c-9105-e5908dbd9af7"><td id="aRae" class="" style="width:82px">11月3日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E8%A7%92%E8%90%BD%E5%B0%8F%E5%A4%A5%E4%BC%B4">角落小伙伴电影版3</a></td><td id="c&gt;PR" class="" style="width:251.65625px">映画 すみっコぐらし ツギハギ工場のふしぎなコ</td><td id="HhbS" class="">Fanworks</td></tr><tr id="518d0c11-8122-4666-be70-fc3b9edaa841"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E7%81%AB%E4%B9%8B%E9%B3%A5%EF%BC%9A%E4%BC%8A%E7%94%B817">火之鸟：伊甸之花</a></td><td id="c&gt;PR" class="" style="width:251.65625px">火の鳥 エデンの花</td><td id="HhbS" class="">STUDIO 4℃</td></tr><tr id="ed472e98-78aa-4b75-96e0-67413544994c"><td id="aRae" class="" style="width:82px">11月10日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/w/index.php?title=%E6%AD%A1%E8%BF%8E%E4%BE%86%E5%88%B0%E9%A7%92%E7%94%B0%E8%92%B8%E9%A4%BE%E6%89%80&amp;action=edit&amp;redlink=1">欢迎来到驹田蒸馏所</a></td><td id="c&gt;PR" class="" style="width:251.65625px">駒田蒸留所へようこそ</td><td id="HhbS" class="">P.A.WORKS</td></tr><tr id="9a4d63cb-2f97-4152-91b7-d0cf6cf98e11"><td id="aRae" class="" style="width:82px">11月17日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E9%AC%BC%E5%A4%AA%E9%83%8E%E8%AA%95%E7%94%9F_%E5%92%AF%E5%92%AF%E5%92%AF%E4%B9%8B%E8%AC%8E">鬼太郎诞生 咯咯咯之谜</a></td><td id="c&gt;PR" class="" style="width:251.65625px">鬼太郎誕生 ゲゲゲの謎</td><td id="HhbS" class="">东映动画</td></tr><tr id="3a9fe82a-c482-4065-8d1b-2dadf15c3620"><td id="aRae" class="" style="width:82px">11月23日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E6%A3%AE%E6%9E%97%E5%AE%B6%E6%97%8F">剧场版 森林家族 芙蕾雅的礼物</a></td><td id="c&gt;PR" class="" style="width:251.65625px">劇場版 シルバニアファミリー フレアからのおくりもの</td><td id="HhbS" class="">FREBARI</td></tr><tr id="62ee1bf5-ef18-4ea6-b14a-ab8a17ad8ee7"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E6%94%BB%E5%A3%B3%E6%9C%BA%E5%8A%A8%E9%98%9F%EF%BC%9ASAC_2045">攻壳机动队 SAC_2045 最后的人类</a></td><td id="c&gt;PR" class="" style="width:251.65625px">攻殻機動隊 SAC_2045 最後の人間</td><td id="HhbS" class="">Production I.G、SOLA DIGITAL ARTS</td></tr><tr id="ad8dc51f-d062-4231-b8d8-db91e49d37e2"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/w/index.php?title=%E9%8B%BC%E7%AE%A1%E5%85%AC%E4%B8%BB!!&amp;action=edit&amp;redlink=1">剧场版 钢管公主!!</a></td><td id="c&gt;PR" class="" style="width:251.65625px">劇場版 ポールプリンセス!!</td><td id="HhbS" class="">龙之子</td></tr><tr id="b435d94d-2e67-4f03-80d9-3a9679f1e446"><td id="aRae" class="" style="width:82px">11月24日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%81%B6%E5%83%8F%E5%A4%A7%E5%B8%AB_%E9%96%83%E8%80%80%E8%89%B2%E5%BD%A9">偶像大师 闪耀色彩 第2章</a></td><td id="c&gt;PR" class="" style="width:251.65625px">アイドルマスター シャイニーカラーズ 第2章</td><td id="HhbS" class="">Polygon Pictures</td></tr><tr id="e54a3ac1-fa72-4b8e-b02c-4b3cbb6566f1"><td id="aRae" class="" style="width:82px">12月1日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E9%9D%92%E6%98%A5%E8%B1%AC%E9%A0%AD%E5%B0%91%E5%B9%B4%E4%B8%8D%E6%9C%83%E5%A4%A2%E5%88%B0%E7%B4%85%E6%9B%B8%E5%8C%85%E5%A5%B3%E5%AD%A9">青春猪头少年不会梦到红书包女孩</a></td><td id="c&gt;PR" class="" style="width:251.65625px">青春ブタ野郎はランドセルガールの夢を見ない</td><td id="HhbS" class="">CloverWorks</td></tr><tr id="54208d44-4cb5-4bb0-875d-a98c473043d6"><td id="aRae" class="" style="width:82px">12月8日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E8%BD%89%E7%94%9F%E6%88%90%E5%A5%B3%E6%80%A7%E5%90%91%E9%81%8A%E6%88%B2%E5%8F%AA%E6%9C%89%E6%AF%80%E6%BB%85END%E7%9A%84%E5%A3%9E%E4%BA%BA%E5%A4%A7%E5%B0%8F%E5%A7%90">剧场版 转生成女性向游戏只有毁灭END的坏人大小姐</a></td><td id="c&gt;PR" class="" style="width:251.65625px">劇場版 乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった…</td><td id="HhbS" class="">SILVER LINK.</td></tr><tr id="6d2a8df7-e0d7-47a3-8f36-6fc06c173478"><td id="aRae" class="" style="width:82px"></td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E7%AA%97%E9%82%8A%E7%9A%84%E5%B0%8F%E8%8D%B3%E8%8D%B3">窗边的小豆豆</a></td><td id="c&gt;PR" class="" style="width:251.65625px">窓ぎわのトットちゃん</td><td id="HhbS" class="">新锐动画</td></tr><tr id="13f36eef-36c7-4a6e-9e9c-6d485a3164a6"><td id="aRae" class="" style="width:82px">12月15日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E9%96%A3%E6%A8%93%E7%9A%84%E6%8B%89%E5%82%91">阁楼的拉杰</a></td><td id="c&gt;PR" class="" style="width:251.65625px">屋根裏のラジャー</td><td id="HhbS" class="">Studio Ponoc</td></tr><tr id="e81e2739-54e3-4df1-9960-ad221d33c0b5"><td id="aRae" class="" style="width:82px">12月22日</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/%E5%8A%87%E5%A0%B4%E7%89%88_SPY%C3%97FAMILY_CODE:_White">剧场版 SPY×FAMILY CODE: White</a></td><td id="c&gt;PR" class="" style="width:251.65625px">劇場版 SPY×FAMILY CODE: White</td><td id="HhbS" class="">WIT STUDIO、CloverWorks</td></tr><tr id="d2a35dd2-6043-4fcf-898d-871f72757b1d"><td id="aRae" class="" style="width:82px">2023年内</td><td id="kUeo" class="" style="width:238.671875px"><a href="https://zh.wikipedia.org/wiki/10_Count">10 Count</a></td><td id="c&gt;PR" class="" style="width:251.65625px">テンカウント</td><td id="HhbS" class="">东鱼工作室、SynergySP</td></tr></tbody></table></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

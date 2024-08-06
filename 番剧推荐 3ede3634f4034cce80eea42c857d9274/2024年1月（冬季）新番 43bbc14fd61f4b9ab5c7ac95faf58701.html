@@ -1,0 +1,678 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>2024年1月（冬季）新番</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="43bbc14f-d61f-4b9a-b5c7-ac95faf58701" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">⛄</span></div><h1 class="page-title">2024年1月（冬季）新番</h1><p class="page-description"></p></header><div class="page-body"><p id="2b58f432-1811-4e2c-96c2-7f82e0146978" class="">最近更新：2024年4月3日 19:58</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="7e1dbda7-dbf1-4bfe-9981-439edbab91b2"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/preview_gray.svg"/></div><div style="width:100%"><a href="https://www.bilibili.com/video/BV1Yx42197gb/?share_source=copy_web&amp;vd_source=a82342acb05238eea2b48002e91aa526">咕....你杀了我也不看1月新番！【泛式】</a></div></figure><table id="2eea25df-f3aa-4d4d-8e6a-f85510fb82ef" class="simple-table"><tbody><tr id="18fad394-75b6-4c5b-a409-f2f5c761cc05"><td id="YW;{" class="" style="width:77.390625px">开始日－结束日</td><td id="MQl;" class="" style="width:205.859375px">作品名</td><td id="k@?I" class="" style="width:242.875px">原名</td><td id="S`;W" class="">制作公司</td><td id="cA;a" class="" style="width:54px">话数</td></tr><tr id="de64091c-453a-4607-89f1-492d871558e4"><td id="YW;{" class="" style="width:77.390625px">1月2日－3月26日</td><td id="MQl;" class="" style="width:205.859375px">BASTARD!! －暗黑破坏神－（第2期）</td><td id="k@?I" class="" style="width:242.875px">BASTARD!!―暗黒の破壊神―</td><td id="S`;W" class="">LIDENFILMS</td><td id="cA;a" class="" style="width:54px">15话</td></tr><tr id="6b319299-800c-4bcc-a8d3-e8484333bcf2"><td id="YW;{" class="" style="width:77.390625px">1月3日－3月27日</td><td id="MQl;" class="" style="width:205.859375px">弱势角色友崎君 2nd STAGE（第2期）</td><td id="k@?I" class="" style="width:242.875px">弱キャラ友崎くん 2nd STAGE</td><td id="S`;W" class="">project No.9</td><td id="cA;a" class="" style="width:54px">13话</td></tr><tr id="f12a7991-d641-409a-bf07-547c2b874a45"><td id="YW;{" class="" style="width:77.390625px">1月3日－3月27日</td><td id="MQl;" class="" style="width:205.859375px">欢迎来到实力至上主义的教室 3rd Season（第3期）</td><td id="k@?I" class="" style="width:242.875px">ようこそ実力至上主義の教室へ 3rd Season</td><td id="S`;W" class="">Lerche</td><td id="cA;a" class="" style="width:54px">13话</td></tr><tr id="48165630-75a0-4c42-9dcf-cb7aa01bd4f7"><td id="YW;{" class="" style="width:77.390625px">1月3日－3月20日</td><td id="MQl;" class="" style="width:205.859375px">异修罗</td><td id="k@?I" class="" style="width:242.875px">異修羅</td><td id="S`;W" class="">Passione</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="710d86bb-e2a1-440d-b883-d3c502387e5e"><td id="YW;{" class="" style="width:77.390625px">1月3日－3月27日</td><td id="MQl;" class="" style="width:205.859375px">梦想成为魔法少女</td><td id="k@?I" class="" style="width:242.875px">魔法少女にあこがれて</td><td id="S`;W" class="">旭Production</td><td id="cA;a" class="" style="width:54px">13话</td></tr><tr id="22b0c8e5-3576-4f4e-9fda-b8a420f4dd88"><td id="YW;{" class="" style="width:77.390625px">1月4日－</td><td id="MQl;" class="" style="width:205.859375px">迷宫饭</td><td id="k@?I" class="" style="width:242.875px">ダンジョン飯</td><td id="S`;W" class="">TRIGGER</td><td id="cA;a" class="" style="width:54px">24话</td></tr><tr id="7a561411-7876-4279-a1f3-ee351b11c7f7"><td id="YW;{" class="" style="width:77.390625px">1月4日－3月21日</td><td id="MQl;" class="" style="width:205.859375px">魔都精兵的奴隶</td><td id="k@?I" class="" style="width:242.875px">魔都精兵のスレイブ</td><td id="S`;W" class="">Seven Arcs</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="1063d7c9-1713-4995-b0dd-2e262ace308f"><td id="YW;{" class="" style="width:77.390625px">1月4日－3月21日</td><td id="MQl;" class="" style="width:205.859375px">秒杀外挂太强了，异世界的家伙们根本就不是对手。</td><td id="k@?I" class="" style="width:242.875px">即死チートが最強すぎて、異世界のやつらがまるで相手にならないんですが。</td><td id="S`;W" class="">Okuruto Noboru</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="f6d9e0d6-f5c9-4adf-b3a6-dd2b9d510406"><td id="YW;{" class="" style="width:77.390625px">1月5日－3月22日</td><td id="MQl;" class="" style="width:205.859375px">佐佐木与文鸟小哔</td><td id="k@?I" class="" style="width:242.875px">佐々木とピーちゃん</td><td id="S`;W" class="">SILVER LINK.</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="180457a4-3238-442f-ace2-5adeab55b7a8"><td id="YW;{" class="" style="width:77.390625px">1月5日－3月29日</td><td id="MQl;" class="" style="width:205.859375px">超普通县千叶传说</td><td id="k@?I" class="" style="width:242.875px">超普通県チバ伝説</td><td id="S`;W" class="">超普通Studio</td><td id="cA;a" class="" style="width:54px">13话</td></tr><tr id="05b27add-ad64-43b8-9801-3428c0a21366"><td id="YW;{" class="" style="width:77.390625px">1月5日－3月22日</td><td id="MQl;" class="" style="width:205.859375px">百千家的妖怪王子</td><td id="k@?I" class="" style="width:242.875px">百千さん家のあやかし王子</td><td id="S`;W" class="">Drive</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="83226c15-7891-42a9-9628-20888747cbaa"><td id="YW;{" class="" style="width:77.390625px">1月5日－3月29日</td><td id="MQl;" class="" style="width:205.859375px">治愈魔法的错误使用法</td><td id="k@?I" class="" style="width:242.875px">治癒魔法の間違った使い方</td><td id="S`;W" class="">studio add、新锐动画</td><td id="cA;a" class="" style="width:54px">13话</td></tr><tr id="2e2bdfa4-b58f-40f9-a3a2-8f2b73a59301"><td id="YW;{" class="" style="width:77.390625px">1月5日－3月22日</td><td id="MQl;" class="" style="width:205.859375px">碰之道</td><td id="k@?I" class="" style="width:242.875px">ぽんのみち</td><td id="S`;W" class="">OLM</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="f2c95071-401e-435a-af25-caa28d22981c"><td id="YW;{" class="" style="width:77.390625px">1月6日－3月23日</td><td id="MQl;" class="" style="width:205.859375px">四处贴上吧！小狗</td><td id="k@?I" class="" style="width:242.875px">貼りまわれ！こいぬ</td><td id="S`;W" class="">Opera House</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="dd20a31d-fcb1-49ce-b411-c3d6d9e8c688"><td id="YW;{" class="" style="width:77.390625px">1月6日－</td><td id="MQl;" class="" style="width:205.859375px">最强王图鉴 ～The Ultimate Battles～</td><td id="k@?I" class="" style="width:242.875px">最強王図鑑 ～The Ultimate Battles～</td><td id="S`;W" class="">OLM Digital</td><td id="cA;a" class="" style="width:54px"></td></tr><tr id="f613ac92-c081-45ae-b10f-41b2f0f606eb"><td id="YW;{" class="" style="width:77.390625px">1月6日－3月23日</td><td id="MQl;" class="" style="width:205.859375px">婚戒物语</td><td id="k@?I" class="" style="width:242.875px">結婚指輪物語</td><td id="S`;W" class="">Staple Entertainment</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="3fef3f95-9f12-4036-ba8c-c635aa3e68b2"><td id="YW;{" class="" style="width:77.390625px">1月6日－3月23日</td><td id="MQl;" class="" style="width:205.859375px">指尖相触，恋恋不舍</td><td id="k@?I" class="" style="width:242.875px">ゆびさきと恋々</td><td id="S`;W" class="">亚细亚堂</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="8e33ff9f-2fb0-49ee-ad90-f77c8a02169b"><td id="YW;{" class="" style="width:77.390625px">1月6日－3月30日</td><td id="MQl;" class="" style="width:205.859375px">物理魔法使马修 神觉者候补选拔试验篇（第2期）</td><td id="k@?I" class="" style="width:242.875px">マッシュル-MASHLE- 神覚者候補選抜試験編</td><td id="S`;W" class="">A-1 Pictures</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="da207b9f-a647-449c-b7e0-76a1b3cf0fde"><td id="YW;{" class="" style="width:77.390625px">1月6日－3月30日</td><td id="MQl;" class="" style="width:205.859375px">我独自升级</td><td id="k@?I" class="" style="width:242.875px">俺だけレベルアップな件</td><td id="S`;W" class="">A-1 Pictures</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="92bfe993-8a64-4579-9d63-38133d284547"><td id="YW;{" class="" style="width:77.390625px">1月6日－3月23日</td><td id="MQl;" class="" style="width:205.859375px">青之驱魔师 岛根启明结社篇（第3期）</td><td id="k@?I" class="" style="width:242.875px">青の祓魔師 島根啓明結社篇</td><td id="S`;W" class="">Studio VOLN</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="e88b52f7-3ce1-4f49-bcdf-c5929ed332c0"><td id="YW;{" class="" style="width:77.390625px">1月6日－3月30日</td><td id="MQl;" class="" style="width:205.859375px">我内心的糟糕念头（第2期）</td><td id="k@?I" class="" style="width:242.875px">僕の心のヤバイやつ</td><td id="S`;W" class="">新锐动画</td><td id="cA;a" class="" style="width:54px">13话</td></tr><tr id="0739c698-20f2-494e-a15e-247c635d6954"><td id="YW;{" class="" style="width:77.390625px">1月6日－3月23日</td><td id="MQl;" class="" style="width:205.859375px">最强肉盾的迷宫攻略～拥有稀少技能体力9999的肉盾，被勇者队伍辞退了～</td><td id="k@?I" class="" style="width:242.875px">最強タンクの迷宮攻略 ～体力9999のレアスキル持ちタンク、勇者パーティーを追放される～</td><td id="S`;W" class="">STUDIO POLON</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="b0e72b3e-d237-4d09-811c-d01e654a6db8"><td id="YW;{" class="" style="width:77.390625px">1月7日－3月24日</td><td id="MQl;" class="" style="width:205.859375px">为了在异世界也能抚摸毛茸茸而努力。</td><td id="k@?I" class="" style="width:242.875px">異世界でもふもふなでなでするためにがんばってます。</td><td id="S`;W" class="">EMT Squared</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="fd032e71-b53b-419f-bdf4-d038583b0390"><td id="YW;{" class="" style="width:77.390625px">1月7日－3月24日</td><td id="MQl;" class="" style="width:205.859375px">因为不是真正的伙伴而被逐出勇者队伍，流落到边境展开慢活人生 2nd（第2期）</td><td id="k@?I" class="" style="width:242.875px">真の仲間じゃないと勇者のパーティーを追い出されたので、辺境でスローライフすることにしました 2nd</td><td id="S`;W" class="">Studio Flad</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="be3c77c9-f12d-4500-86a5-38f4216e5dcf"><td id="YW;{" class="" style="width:77.390625px">1月7日－3月24日</td><td id="MQl;" class="" style="width:205.859375px">轮回七次的恶役千金，在前敌国享受随心所欲的新婚生活</td><td id="k@?I" class="" style="width:242.875px">ループ7回目の悪役令嬢は、元敵国で自由気ままな花嫁生活を満喫する</td><td id="S`;W" class="">STUDIO KAI、HORNETS</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="a0b7e8bb-9eaf-4eee-991e-15f4e7926b10"><td id="YW;{" class="" style="width:77.390625px">1月7日－3月10日</td><td id="MQl;" class="" style="width:205.859375px">挣扎吧，亚当君</td><td id="k@?I" class="" style="width:242.875px">悶えてよ、アダムくん</td><td id="S`;W" class="">studio HōKIBOSHI</td><td id="cA;a" class="" style="width:54px">8话</td></tr><tr id="ed019f5d-c91b-43c7-832b-5c21574ea3b7"><td id="YW;{" class="" style="width:77.390625px">1月7日－3月24日</td><td id="MQl;" class="" style="width:205.859375px">休假的坏人先生</td><td id="k@?I" class="" style="width:242.875px">休日のわるものさん</td><td id="S`;W" class="">新锐动画、SynergySP</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="d2baa1f0-3a49-4738-a62f-a4855af549b6"><td id="YW;{" class="" style="width:77.390625px">1月8日－3月25日</td><td id="MQl;" class="" style="width:205.859375px">HIGH CARD 至高之牌（第2期）</td><td id="k@?I" class="" style="width:242.875px">HIGH CARD</td><td id="S`;W" class="">云雀工作室</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="94bc59bb-8168-4bfb-80fa-8faa7af369e9"><td id="YW;{" class="" style="width:77.390625px">1月8日－3月25日</td><td id="MQl;" class="" style="width:205.859375px">非自愿的不死冒险者</td><td id="k@?I" class="" style="width:242.875px">望まぬ不死の冒険者</td><td id="S`;W" class="">CONNECT</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="5e27cad2-b48d-4944-9502-7156011d6a19"><td id="YW;{" class="" style="width:77.390625px">1月8日－</td><td id="MQl;" class="" style="width:205.859375px">月光下的异世界之旅 第二幕（第2期）</td><td id="k@?I" class="" style="width:242.875px">月が導く異世界道中 第二幕</td><td id="S`;W" class="">J.C.STAFF</td><td id="cA;a" class="" style="width:54px">25话</td></tr><tr id="c3ad4b18-5708-43a7-9bd4-67ef1fffe5e3"><td id="YW;{" class="" style="width:77.390625px">1月8日－3月25日</td><td id="MQl;" class="" style="width:205.859375px">公主殿下，“拷问”的时间到了</td><td id="k@?I" class="" style="width:242.875px">姫様“拷問”の時間です</td><td id="S`;W" class="">PINE JAM</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="729d46d0-ee8c-4980-9087-1b5d0373b2f4"><td id="YW;{" class="" style="width:77.390625px">1月8日－3月25日</td><td id="MQl;" class="" style="width:205.859375px">奇异贤伴 黑色天使（下半）</td><td id="k@?I" class="" style="width:242.875px">SYNDUALITY Noir</td><td id="S`;W" class="">8bit</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="a46c3c33-d6b4-4155-b80d-142f8dada3ad"><td id="YW;{" class="" style="width:77.390625px">1月8日－3月25日</td><td id="MQl;" class="" style="width:205.859375px">北海道辣妹金古锥</td><td id="k@?I" class="" style="width:242.875px">道産子ギャルはなまらめんこい</td><td id="S`;W" class="">SILVER LINK.、BLADE</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="8dc5d10c-41cf-4770-bc42-607ec87cb181"><td id="YW;{" class="" style="width:77.390625px">1月8日－3月25日</td><td id="MQl;" class="" style="width:205.859375px">愚蠢天使与恶魔共舞</td><td id="k@?I" class="" style="width:242.875px">愚かな天使は悪魔と踊る</td><td id="S`;W" class="">Children&#x27;s Playground Entertainment</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="2fc7bbc5-671a-4912-8d8f-4b6d3b5bf8ec"><td id="YW;{" class="" style="width:77.390625px">1月9日－3月26日</td><td id="MQl;" class="" style="width:205.859375px">反派千金等级99～我是隐藏头目但不是魔王～</td><td id="k@?I" class="" style="width:242.875px">悪役令嬢レベル99 ～私は裏ボスですが魔王ではありません～</td><td id="S`;W" class="">寿门堂</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="f7f5cb88-5dc1-4d49-8614-bd0a74060d10"><td id="YW;{" class="" style="width:77.390625px">1月9日－4月2日</td><td id="MQl;" class="" style="width:205.859375px">通灵王 FLOWERS</td><td id="k@?I" class="" style="width:242.875px">SHAMAN KING FLOWERS</td><td id="S`;W" class="">Bridge</td><td id="cA;a" class="" style="width:54px">13话</td></tr><tr id="44f21237-c71b-4f78-993e-7055b99ce327"><td id="YW;{" class="" style="width:77.390625px">1月9日－3月26日</td><td id="MQl;" class="" style="width:205.859375px">Crypto Ninja 咲耶 贰之卷（第2期）</td><td id="k@?I" class="" style="width:242.875px">忍ばない！クリプトニンジャ咲耶 弐ノ巻</td><td id="S`;W" class="">Fanworks</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="31eb489f-9773-4bce-a79c-0d5fa838ce3f"><td id="YW;{" class="" style="width:77.390625px">1月10日－3月27日</td><td id="MQl;" class="" style="width:205.859375px">女王的手术刀</td><td id="k@?I" class="" style="width:242.875px">外科医エリーゼ</td><td id="S`;W" class="">MAHO FILM</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="24a63358-aac9-4714-b62f-1ecc77259d9f"><td id="YW;{" class="" style="width:77.390625px">1月10日－4月3日</td><td id="MQl;" class="" style="width:205.859375px">战国妖狐 救世姐弟篇</td><td id="k@?I" class="" style="width:242.875px">戦国妖狐</td><td id="S`;W" class="">WHITE FOX</td><td id="cA;a" class="" style="width:54px">13话</td></tr><tr id="523d6a5e-0d7d-4f22-889e-43529abe00bb"><td id="YW;{" class="" style="width:77.390625px">1月10日－3月27日</td><td id="MQl;" class="" style="width:205.859375px">如果30岁还是处男，似乎就能成为魔法师</td><td id="k@?I" class="" style="width:242.875px">30歳まで童貞だと魔法使いになれるらしい</td><td id="S`;W" class="">SATELIGHT</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="3ee23c1e-d6bd-4208-8934-44b6296b98cb"><td id="YW;{" class="" style="width:77.390625px">1月10日－4月3日</td><td id="MQl;" class="" style="width:205.859375px">金属口红</td><td id="k@?I" class="" style="width:242.875px">メタリックルージュ</td><td id="S`;W" class="">BONES</td><td id="cA;a" class="" style="width:54px">13话</td></tr><tr id="97532aa0-40e7-41a0-9794-663cd884770f"><td id="YW;{" class="" style="width:77.390625px">1月11日－3月28日</td><td id="MQl;" class="" style="width:205.859375px">月刊妄想科学</td><td id="k@?I" class="" style="width:242.875px">月刊モー想科学</td><td id="S`;W" class="">OLM Team Yoshioka</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="ab11f31e-b855-438e-93d3-d47672a372b7"><td id="YW;{" class="" style="width:77.390625px">1月11日－3月28日</td><td id="MQl;" class="" style="width:205.859375px">勇气爆发Bang Bravern</td><td id="k@?I" class="" style="width:242.875px">勇気爆発バーンブレイバーン</td><td id="S`;W" class="">CygamesPictures</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="b585d4b8-938e-4348-812d-0ef3c7f74c3a"><td id="YW;{" class="" style="width:77.390625px">1月11日－</td><td id="MQl;" class="" style="width:205.859375px">福星小子（第2期）</td><td id="k@?I" class="" style="width:242.875px">うる星やつら</td><td id="S`;W" class="">david production</td><td id="cA;a" class="" style="width:54px">23话</td></tr><tr id="50f6b552-bf65-4005-93c8-fd1af5198815"><td id="YW;{" class="" style="width:77.390625px">1月11日－3月28日</td><td id="MQl;" class="" style="width:205.859375px">名汤“异世界温泉”开拓记～30多岁温泉狂热者，转生到悠闲的温泉天国～</td><td id="k@?I" class="" style="width:242.875px">名湯「異世界の湯」開拓記 ～アラフォー温泉マニアの転生先は、のんびり温泉天国でした～</td><td id="S`;W" class="">BloomZ、Wolfsbane</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="ddbf83a7-90b8-4a1b-bfc1-16ce3da363e0"><td id="YW;{" class="" style="width:77.390625px">1月11日－4月4日</td><td id="MQl;" class="" style="width:205.859375px">魔女与野兽</td><td id="k@?I" class="" style="width:242.875px">魔女と野獣</td><td id="S`;W" class="">横滨动画研究所</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="2749c81c-31f3-4b80-a07b-3c6b4b8ef582"><td id="YW;{" class="" style="width:77.390625px">1月12日－3月29日</td><td id="MQl;" class="" style="width:205.859375px">最弱魔物使开始了捡垃圾之旅。</td><td id="k@?I" class="" style="width:242.875px">最弱テイマーはゴミ拾いの旅を始めました。</td><td id="S`;W" class="">STUDIO MASSKET</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="79425e2e-1fe9-4ac9-89e9-3c35cd4ac089"><td id="YW;{" class="" style="width:77.390625px">1月12日－3月29日</td><td id="MQl;" class="" style="width:205.859375px">小酒馆Basue</td><td id="k@?I" class="" style="width:242.875px">スナックバス江</td><td id="S`;W" class="">STUDIO PUYUKAI</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="e9415b76-e2be-4454-862e-dfcab4ad65f7"><td id="YW;{" class="" style="width:77.390625px">1月13日－</td><td id="MQl;" class="" style="width:205.859375px">卡片战斗!! 先导者 Divinez</td><td id="k@?I" class="" style="width:242.875px">カードファイト!! ヴァンガード Divinez</td><td id="S`;W" class="">KINEMA CITRUS、Gift Animation、STUDIOJEMI</td><td id="cA;a" class="" style="width:54px"></td></tr><tr id="637dc8a0-2fe7-4c26-bd3e-3acee4df9827"><td id="YW;{" class="" style="width:77.390625px">1月13日－4月6日</td><td id="MQl;" class="" style="width:205.859375px">BUCCHIGIRI?![注 1]</td><td id="k@?I" class="" style="width:242.875px">ぶっちぎり?!</td><td id="S`;W" class="">MAPPA</td><td id="cA;a" class="" style="width:54px">12话</td></tr><tr id="2579c5e4-55df-40dc-b7f2-96d7ce1ba173"><td id="YW;{" class="" style="width:77.390625px">1月13日－3月30日</td><td id="MQl;" class="" style="width:205.859375px">王者天下（第5期）</td><td id="k@?I" class="" style="width:242.875px">キングダム</td><td id="S`;W" class="">pierrot、St.Signpost</td><td id="cA;a" class="" style="width:54px">13话</td></tr><tr id="dc2e4a32-373e-4885-a18b-643aec884e0a"><td id="YW;{" class="" style="width:77.390625px">1月14日－3月17日</td><td id="MQl;" class="" style="width:205.859375px">狩火之王（第2期）</td><td id="k@?I" class="" style="width:242.875px">火狩りの王</td><td id="S`;W" class="">SIGNAL.MD</td><td id="cA;a" class="" style="width:54px">10话</td></tr><tr id="d8d744bd-5ffd-4d74-9d20-bf74259a2692"><td id="YW;{" class="" style="width:77.390625px">1月14日－3月24日</td><td id="MQl;" class="" style="width:205.859375px">Meiji Gekken: 1874[注 1]</td><td id="k@?I" class="" style="width:242.875px">明治撃剣－1874－</td><td id="S`;W" class="">Tsumugi Akita Animation Lab</td><td id="cA;a" class="" style="width:54px">10话</td></tr><tr id="34dfb676-7dbe-4b7d-aa10-63d9e769ce50"><td id="YW;{" class="" style="width:77.390625px">1月14日－</td><td id="MQl;" class="" style="width:205.859375px">暗芝居（第12期）</td><td id="k@?I" class="" style="width:242.875px">闇芝居</td><td id="S`;W" class="">ILCA</td><td id="cA;a" class="" style="width:54px"></td></tr><tr id="ee73fb34-b858-46d2-806e-83ba31496889"><td id="YW;{" class="" style="width:77.390625px">2月4日－</td><td id="MQl;" class="" style="width:205.859375px">美妙宠物 光之美少女</td><td id="k@?I" class="" style="width:242.875px">わんだふるぷりきゅあ！</td><td id="S`;W" class="">东映动画</td><td id="cA;a" class="" style="width:54px"></td></tr><tr id="35fcc781-5996-42f8-962a-8048245f4400"><td id="YW;{" class="" style="width:77.390625px">3月1日－3月22日</td><td id="MQl;" class="" style="width:205.859375px">SCIENCE SARU×MBS 原创短篇动画大作战！</td><td id="k@?I" class="" style="width:242.875px">サイエンスSARU×MBS オリジナルショートアニメ大作戦！</td><td id="S`;W" class="">SCIENCE SARU</td><td id="cA;a" class="" style="width:54px">4话</td></tr></tbody></table><blockquote id="d4ff9327-b90b-49e0-936d-7c43c78a8a59" class="">译名均为台版译名<br/>数据来源：Wikipedia、MyAnimeList<br/></blockquote><p id="c73980c0-62f2-426d-a7f6-3454022c4e1e" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

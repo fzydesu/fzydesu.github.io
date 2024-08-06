@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>2024年7月（夏季）新番</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="d1720117-a85e-4149-b73e-2b2811c852c7" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">☀️</span></div><h1 class="page-title">2024年7月（夏季）新番</h1><p class="page-description"></p></header><div class="page-body"><p id="01927cdd-eaae-4690-bba2-272e89ca3287" class="">最近更新：2024年7月1日</p><h3 id="0f3bab61-983f-4e20-a290-3cbce8a2bed8" class="">追番日志</h3><blockquote id="c62c9c34-ca94-42b8-aa03-f6c0155f63d6" class="">标绿播出 2 集，标蓝播出 3 集</blockquote><table id="304653ff-48a2-4911-86ec-103f574b2573" class="simple-table"><thead class="simple-table-header"><tr id="d3ff67b1-9390-44a0-80d3-5101bcc744ec"><th id="y@v`" class="block-color-teal_background simple-table-header" style="width:182px">周日</th><th id="qW]:" class="block-color-blue_background simple-table-header" style="width:63px">周一</th><th id="vqD_" class="block-color-blue_background simple-table-header" style="width:60px">周二</th><th id="}R]=" class="block-color-teal_background simple-table-header">周三</th><th id="qZ{i" class="block-color-teal_background simple-table-header">周四</th><th id="d&gt;St" class="block-color-teal_background simple-table-header" style="width:137px">周五</th><th id="nbFM" class="block-color-teal_background simple-table-header">周六</th></tr></thead><tbody><tr id="141bfacc-ce4c-4940-8b6c-8720490d3f2c"><td id="y@v`" class="block-color-teal_background" style="width:182px">小市民系列</td><td id="qW]:" class="block-color-blue_background" style="width:63px"></td><td id="vqD_" class="block-color-blue_background" style="width:60px"></td><td id="}R]=" class="block-color-teal_background">我推的孩子</td><td id="qZ{i" class="block-color-teal_background">义妹生活<br/>（首播三集）<br/></td><td id="d&gt;St" class="block-color-teal_background" style="width:137px">2.5次元的诱惑</td><td id="nbFM" class="block-color-teal_background">ATRI（1集）</td></tr><tr id="c17e1ce5-b01a-465e-a4c6-0a90f07c9926"><td id="y@v`" class="block-color-teal_background" style="width:182px">败北女主太多了（1集）</td><td id="qW]:" class="block-color-blue_background" style="width:63px"></td><td id="vqD_" class="block-color-blue_background" style="width:60px"></td><td id="}R]=" class="block-color-teal_background">不时轻声地以俄语遮羞的邻座艾莉同学</td><td id="qZ{i" class="block-color-teal_background">学姐是男孩</td><td id="d&gt;St" class="block-color-teal_background" style="width:137px"></td><td id="nbFM" class="block-color-teal_background"></td></tr><tr id="d67a0bf3-11aa-44b1-96a6-e47db7eff211"><td id="y@v`" class="block-color-teal_background" style="width:182px">鹿乃子乃子乃子虎视眈眈</td><td id="qW]:" class="block-color-blue_background" style="width:63px"></td><td id="vqD_" class="block-color-blue_background" style="width:60px"></td><td id="}R]=" class="block-color-teal_background"></td><td id="qZ{i" class="block-color-teal_background"></td><td id="d&gt;St" class="block-color-teal_background" style="width:137px"></td><td id="nbFM" class="block-color-teal_background"></td></tr><tr id="627851ec-f3fc-4e9a-92ce-bba8fa696071"><td id="y@v`" class="block-color-teal_background" style="width:182px">身为VTuber的我因为忘记关台而成了传说</td><td id="qW]:" class="block-color-blue_background" style="width:63px"></td><td id="vqD_" class="block-color-blue_background" style="width:60px"></td><td id="}R]=" class="block-color-teal_background"></td><td id="qZ{i" class="block-color-teal_background"></td><td id="d&gt;St" class="block-color-teal_background" style="width:137px"></td><td id="nbFM" class="block-color-teal_background"></td></tr><tr id="328d4822-a8cd-41f8-aee8-e2642cb834da"><td id="y@v`" class="block-color-teal_background" style="width:182px"></td><td id="qW]:" class="block-color-blue_background" style="width:63px"></td><td id="vqD_" class="block-color-blue_background" style="width:60px"></td><td id="}R]=" class="block-color-teal_background"></td><td id="qZ{i" class="block-color-teal_background"></td><td id="d&gt;St" class="block-color-teal_background" style="width:137px"></td><td id="nbFM" class="block-color-teal_background"></td></tr></tbody></table><table id="553ae0a7-0a0b-4cae-a8ea-0c04dac8dd4e" class="simple-table"><tbody><tr id="06138827-43c7-46ee-83b9-4b81e67c846e"><td id="UtEp" class="" style="width:175px"><strong>番名</strong></td><td id="=&lt;Dw" class="" style="width:98px"><strong>画面</strong></td><td id="KxIJ" class="" style="width:99px"><strong>OP</strong></td><td id="HX~G" class="" style="width:86px"><strong>ED</strong></td><td id="zOCz" class="" style="width:97px"><strong>剧情</strong></td><td id="s_KM" class="" style="width:88px"><strong>人设</strong></td><td id="FBzg" class=""><strong>综合</strong></td></tr><tr id="e4b5f1df-5979-436e-955d-a954359b736e"><td id="UtEp" class="" style="width:175px"><strong>不时轻声地以俄语遮羞的邻座艾莉同学</strong></td><td id="=&lt;Dw" class="" style="width:98px">10</td><td id="KxIJ" class="" style="width:99px">10</td><td id="HX~G" class="" style="width:86px">10</td><td id="zOCz" class="" style="width:97px">10</td><td id="s_KM" class="" style="width:88px">10</td><td id="FBzg" class="">10（9.92）</td></tr><tr id="f3d8864d-c4e7-468d-ac0a-8d9b84a6c745"><td id="UtEp" class="" style="width:175px"><strong>义妹生活</strong></td><td id="=&lt;Dw" class="" style="width:98px">9</td><td id="KxIJ" class="" style="width:99px">10</td><td id="HX~G" class="" style="width:86px">10</td><td id="zOCz" class="" style="width:97px">10</td><td id="s_KM" class="" style="width:88px">10</td><td id="FBzg" class="">9.9（9.75）</td></tr><tr id="864db23a-fb81-4bc0-a8f9-a7970adc7f2e"><td id="UtEp" class="" style="width:175px"><strong>【我推的孩子】S2</strong></td><td id="=&lt;Dw" class="" style="width:98px">9</td><td id="KxIJ" class="" style="width:99px">10</td><td id="HX~G" class="" style="width:86px">10</td><td id="zOCz" class="" style="width:97px">10</td><td id="s_KM" class="" style="width:88px">9</td><td id="FBzg" class="">9.85（9.70）</td></tr><tr id="31c30c90-277b-47c1-8bbd-8b882a4c8762"><td id="UtEp" class="" style="width:175px"><strong>败北女主太多了</strong></td><td id="=&lt;Dw" class="" style="width:98px">9</td><td id="KxIJ" class="" style="width:99px">8</td><td id="HX~G" class="" style="width:86px">10</td><td id="zOCz" class="" style="width:97px">10</td><td id="s_KM" class="" style="width:88px">9</td><td id="FBzg" class="">9.7（9.3）</td></tr><tr id="208ee59d-50d0-49b9-8098-8f342b33586a"><td id="UtEp" class="" style="width:175px"><strong>小市民系列</strong></td><td id="=&lt;Dw" class="" style="width:98px">9</td><td id="KxIJ" class="" style="width:99px">8</td><td id="HX~G" class="" style="width:86px">8</td><td id="zOCz" class="" style="width:97px">10</td><td id="s_KM" class="" style="width:88px">9</td><td id="FBzg" class="">9.3（9.0）</td></tr><tr id="54a1d28e-3deb-4cbe-b1af-30e18031c42c"><td id="UtEp" class="" style="width:175px"><strong>ATRI</strong></td><td id="=&lt;Dw" class="" style="width:98px">8</td><td id="KxIJ" class="" style="width:99px">7</td><td id="HX~G" class="" style="width:86px">8</td><td id="zOCz" class="" style="width:97px">10</td><td id="s_KM" class="" style="width:88px">9</td><td id="FBzg" class="">8.5</td></tr><tr id="206cc4c1-3d05-4ae6-8046-a8b6980bd086"><td id="UtEp" class="" style="width:175px"><strong>2.5次元的诱惑</strong></td><td id="=&lt;Dw" class="" style="width:98px">8</td><td id="KxIJ" class="" style="width:99px">8</td><td id="HX~G" class="" style="width:86px">8</td><td id="zOCz" class="" style="width:97px">7</td><td id="s_KM" class="" style="width:88px">9</td><td id="FBzg" class="">8.4</td></tr><tr id="796395e6-a433-481f-8437-add1fae59dab"><td id="UtEp" class="" style="width:175px"><strong>学姐是男孩</strong></td><td id="=&lt;Dw" class="" style="width:98px">8</td><td id="KxIJ" class="" style="width:99px">8</td><td id="HX~G" class="" style="width:86px">8</td><td id="zOCz" class="" style="width:97px">7</td><td id="s_KM" class="" style="width:88px">8</td><td id="FBzg" class="">7.8</td></tr><tr id="767c439a-b9d3-4126-a1bf-a356e455a5e9"><td id="UtEp" class="" style="width:175px"><strong>身为VTuber的我因为忘记关台而成了传说</strong></td><td id="=&lt;Dw" class="" style="width:98px">9</td><td id="KxIJ" class="" style="width:99px">7</td><td id="HX~G" class="" style="width:86px">8</td><td id="zOCz" class="" style="width:97px">8</td><td id="s_KM" class="" style="width:88px">8</td><td id="FBzg" class="">7.8</td></tr><tr id="d0d5938e-89d8-4c8f-909c-9ab67314b46b"><td id="UtEp" class="" style="width:175px"><strong>鹿乃子乃子乃子虎视眈眈</strong></td><td id="=&lt;Dw" class="" style="width:98px">7</td><td id="KxIJ" class="" style="width:99px">6</td><td id="HX~G" class="" style="width:86px">7</td><td id="zOCz" class="" style="width:97px">5</td><td id="s_KM" class="" style="width:88px">5</td><td id="FBzg" class="">7.0</td></tr></tbody></table><table id="95bc18e0-b5e7-4e9d-bd19-39dfaf09297d" class="simple-table"><tbody><tr id="44393cbb-5669-4283-8151-5950e5f12f92"><td id="Hz~F" class=""><strong>开始日－结束日</strong></td><td id="a}td" class="" style="width:259.6640625px"><strong>作品名</strong></td><td id="QlSH" class="" style="width:264px"><strong>原名</strong></td><td id="GBJW" class=""><strong>制作公司</strong></td></tr><tr id="7ad7de4d-12ab-4dd9-ad11-2bf49daf4e03"><td id="Hz~F" class="">7月1日－</td><td id="a}td" class="" style="width:259.6640625px">SHY䩄腆英雄（第2期）</td><td id="QlSH" class="" style="width:264px">SHY</td><td id="GBJW" class="">8bit</td></tr><tr id="bc36dc80-eed3-4a7e-a6bd-f3c75b705d1d"><td id="Hz~F" class="">7月1日[夏 1]－</td><td id="a}td" class="" style="width:259.6640625px">忍者神威</td><td id="QlSH" class="" style="width:264px">NINJA KAMUI</td><td id="GBJW" class="">E&amp;H production</td></tr><tr id="fcac411a-5d03-4a51-8242-6f92730d6374"><td id="Hz~F" class="">7月1日－</td><td id="a}td" class="" style="width:259.6640625px">新人大叔冒险者，被最强队伍操到死成无敌</td><td id="QlSH" class="" style="width:264px">新米オッサン冒険者、最強パーティに死ぬほど鍛えられて無敵になる。</td><td id="GBJW" class="">梦太公司</td></tr><tr id="3269b837-e19a-4720-8b15-37ed175731f6"><td id="Hz~F" class="">7月2日－</td><td id="a}td" class="" style="width:259.6640625px">我的妻子不具感情</td><td id="QlSH" class="" style="width:264px">僕の妻は感情がない</td><td id="GBJW" class="">手冢制作公司</td></tr><tr id="689d6d3b-8bcf-492f-b296-d2bc3c6b47cc"><td id="Hz~F" class="">7月2日－</td><td id="a}td" class="" style="width:259.6640625px">多数欠</td><td id="QlSH" class="" style="width:264px">多数欠</td><td id="GBJW" class="">SATELIGHT</td></tr><tr id="3fd2837d-41b6-4358-8168-3e06a6d7e03d"><td id="Hz~F" class="">7月3日[夏 2]－</td><td id="a}td" class="" style="width:259.6640625px">魔王军最强的魔术师是人类</td><td id="QlSH" class="" style="width:264px">魔王軍最強の魔術師は人間だった</td><td id="GBJW" class="">studio A-CAT</td></tr><tr id="21585aca-6c0c-4f81-8993-6d5ac4840128"><td id="Hz~F" class="block-color-yellow_background">7月3日－</td><td id="a}td" class="block-color-yellow_background" style="width:259.6640625px">【我推的孩子】（第2期）</td><td id="QlSH" class="block-color-yellow_background" style="width:264px">【推しの子】</td><td id="GBJW" class="block-color-yellow_background">动画工房</td></tr><tr id="736adc46-64b6-49f0-829f-6d9d7599abe8"><td id="Hz~F" class="block-color-yellow_background">7月3日－</td><td id="a}td" class="block-color-yellow_background" style="width:259.6640625px">不时轻声地以俄语遮羞的邻座艾莉同学</td><td id="QlSH" class="block-color-yellow_background" style="width:264px">時々ボソッとロシア語でデレる隣のアーリャさん</td><td id="GBJW" class="block-color-yellow_background">动画工房</td></tr><tr id="315a93d8-cb23-4618-bbbd-3b5211367249"><td id="Hz~F" class="block-color-yellow_background">7月4日－</td><td id="a}td" class="block-color-yellow_background" style="width:259.6640625px">义妹生活</td><td id="QlSH" class="block-color-yellow_background" style="width:264px">義妹生活</td><td id="GBJW" class="block-color-yellow_background">Studio DEEN</td></tr><tr id="6b2222ee-95bb-46bc-8448-6bc9cbad1d4a"><td id="Hz~F" class="">7月4日－</td><td id="a}td" class="" style="width:259.6640625px">黄昏光影</td><td id="QlSH" class="" style="width:264px">黄昏アウトフォーカス</td><td id="GBJW" class="">Studio DEEN</td></tr><tr id="2a855812-b8bc-4315-a317-7643810ee9c7"><td id="Hz~F" class="">7月4日－</td><td id="a}td" class="" style="width:259.6640625px">拉面赤猫</td><td id="QlSH" class="" style="width:264px">ラーメン赤猫</td><td id="GBJW" class="">E&amp;H production</td></tr><tr id="306e3293-f219-4913-a7c4-4561c060839d"><td id="Hz~F" class="">7月4日－</td><td id="a}td" class="" style="width:259.6640625px">我要【招架】一切～反误解的世界最强想成为冒险家～</td><td id="QlSH" class="" style="width:264px">俺は全てを【パリイ】する ～逆勘違いの世界最強は冒険者の夢をみる～</td><td id="GBJW" class="">OLM</td></tr><tr id="0d191d87-c2de-405b-bee6-4aec50174c75"><td id="Hz~F" class="">7月4日－</td><td id="a}td" class="" style="width:259.6640625px">女神咖啡厅（第2期）</td><td id="QlSH" class="" style="width:264px">女神のカフェテラス</td><td id="GBJW" class="">手冢制作公司</td></tr><tr id="28c78234-01d2-45e8-b66a-f0e42029566a"><td id="Hz~F" class="">7月4日－</td><td id="a}td" class="" style="width:259.6640625px">百变的七仓同学</td><td id="QlSH" class="" style="width:264px">疑似ハーレム</td><td id="GBJW" class="">NOMAD</td></tr><tr id="6db13144-d056-403e-9fee-24c536910bd5"><td id="Hz~F" class="block-color-yellow_background">7月4日－</td><td id="a}td" class="block-color-yellow_background" style="width:259.6640625px">学姐是男孩</td><td id="QlSH" class="block-color-yellow_background" style="width:264px">先輩はおとこのこ</td><td id="GBJW" class="block-color-yellow_background">project No.9</td></tr><tr id="44aab89e-9726-48f9-b539-c100369db37b"><td id="Hz~F" class="">7月4日－</td><td id="a}td" class="" style="width:259.6640625px">靠废柴技能【状态异常】成为最强的我将蹂躏一切</td><td id="QlSH" class="" style="width:264px">ハズレ枠の【状態異常スキル】で最強になった俺がすべてを蹂躙するまで</td><td id="GBJW" class="">Seven Arcs</td></tr><tr id="40e71c87-cb4a-465b-8fdd-6dc069c3bfca"><td id="Hz~F" class="block-color-yellow_background">7月5日－</td><td id="a}td" class="block-color-yellow_background" style="width:259.6640625px">2.5次元的诱惑</td><td id="QlSH" class="block-color-yellow_background" style="width:264px">2.5次元の誘惑</td><td id="GBJW" class="block-color-yellow_background">J.C.STAFF</td></tr><tr id="43b812e7-ecb0-4b39-a900-db3941584738"><td id="Hz~F" class="">7月5日－</td><td id="a}td" class="" style="width:259.6640625px">尼尔：自动人形 Ver1.1a（下半）</td><td id="QlSH" class="" style="width:264px">NieR:Automata Ver1.1a</td><td id="GBJW" class="">A-1 Pictures</td></tr><tr id="34f1e12a-4053-46de-b4ce-bfe39feb6f16"><td id="Hz~F" class="">7月5日－</td><td id="a}td" class="" style="width:259.6640625px">X特遣队的奇幻之旅</td><td id="QlSH" class="" style="width:264px">異世界スーサイド・スクワッド</td><td id="GBJW" class="">WIT STUDIO</td></tr><tr id="208953c2-9a31-44fe-a706-224846ecd8f1"><td id="Hz~F" class="">7月5日－</td><td id="a}td" class="" style="width:259.6640625px">UFO机器人 古连泰沙U</td><td id="QlSH" class="" style="width:264px">グレンダイザーU</td><td id="GBJW" class="">GAINA</td></tr><tr id="fc69fcb5-b128-46ab-b181-65ba8212c73b"><td id="Hz~F" class="">7月5日－</td><td id="a}td" class="" style="width:259.6640625px">地下城中的人</td><td id="QlSH" class="" style="width:264px">ダンジョンの中のひと</td><td id="GBJW" class="">OLM</td></tr><tr id="5f57c7a8-b192-4d8d-a38d-54ac668237c4"><td id="Hz~F" class="block-color-yellow_background">7月5日－</td><td id="a}td" class="block-color-yellow_background" style="width:259.6640625px">这个世界漏洞百出</td><td id="QlSH" class="block-color-yellow_background" style="width:264px">この世界は不完全すぎる</td><td id="GBJW" class="block-color-yellow_background">100studio、Studio Palette</td></tr><tr id="d6c85ea4-9340-414e-a672-61a87a101ace"><td id="Hz~F" class="">7月6日－</td><td id="a}td" class="" style="width:259.6640625px">四处贴上吧！小狗（第2期）</td><td id="QlSH" class="" style="width:264px">貼りまわれ！こいぬ</td><td id="GBJW" class="">Opera House</td></tr><tr id="de779832-6d04-42ac-8b7d-00891707425c"><td id="Hz~F" class="">7月6日－</td><td id="a}td" class="" style="width:259.6640625px">卡片战斗!! 先导者 Divinez（第2期）</td><td id="QlSH" class="" style="width:264px">カードファイト!! ヴァンガード Divinez Season2</td><td id="GBJW" class="">KINEMA CITRUS、Gift Animation、STUDIOJEMI</td></tr><tr id="49188c99-bda7-46f0-b3fc-98806691ea8c"><td id="Hz~F" class="">7月6日－</td><td id="a}td" class="" style="width:259.6640625px">魔导具师妲莉亚永不妥协</td><td id="QlSH" class="" style="width:264px">魔導具師ダリヤはうつむかない</td><td id="GBJW" class="">台风Graphics、Imagica Infos</td></tr><tr id="a4469a4d-2684-45a0-b156-e461a3f25664"><td id="Hz~F" class="">7月6日－</td><td id="a}td" class="" style="width:259.6640625px">从路人角色开始的探索英雄谭</td><td id="QlSH" class="" style="width:264px">モブから始まる探索英雄譚</td><td id="GBJW" class="">月虹</td></tr><tr id="17538882-515e-42fd-a967-bd822905ffe3"><td id="Hz~F" class="">7月6日－</td><td id="a}td" class="" style="width:259.6640625px">天穗之咲稻姬</td><td id="QlSH" class="" style="width:264px">天穂のサクナヒメ</td><td id="GBJW" class="">P.A.WORKS</td></tr><tr id="20382045-1a40-4a72-9b3e-8520f7e3c1d9"><td id="Hz~F" class="">7月6日－</td><td id="a}td" class="" style="width:259.6640625px">擅长逃跑的殿下</td><td id="QlSH" class="" style="width:264px">逃げ上手の若君</td><td id="GBJW" class="">CloverWorks</td></tr><tr id="0e7234dd-cf8f-4c79-b6d9-18ba2b7db1f1"><td id="Hz~F" class="">7月6日－</td><td id="a}td" class="" style="width:259.6640625px">现代误译</td><td id="QlSH" class="" style="width:264px">現代誤訳</td><td id="GBJW" class="">ILCASHIPS</td></tr><tr id="aff43f78-1f39-4b15-9fb2-d374b389fa2a"><td id="Hz~F" class="">7月6日－</td><td id="a}td" class="" style="width:259.6640625px">精灵小姐瘦不了</td><td id="QlSH" class="" style="width:264px">エルフさんは痩せられない。</td><td id="GBJW" class="">Elias</td></tr><tr id="0fce5a0b-3ece-4d73-8e3d-c0c457689e0e"><td id="Hz~F" class="">7月6日－</td><td id="a}td" class="" style="width:259.6640625px">小市民系列</td><td id="QlSH" class="" style="width:264px">小市民シリーズ</td><td id="GBJW" class="">Lapin Track</td></tr><tr id="25efa345-38a9-4e28-b7df-59122b8b6331"><td id="Hz~F" class="">7月7日－</td><td id="a}td" class="" style="width:259.6640625px">杖与剑的魔剑谭</td><td id="QlSH" class="" style="width:264px">杖と剣のウィストリア</td><td id="GBJW" class="">Actas、Bandai Namco Pictures</td></tr><tr id="6fb76680-07f6-4cbd-860b-1ce5905252f7"><td id="Hz~F" class="">7月7日－</td><td id="a}td" class="" style="width:259.6640625px">妖精的尾巴 百年任务</td><td id="QlSH" class="" style="width:264px">FAIRY TAIL 100年クエスト</td><td id="GBJW" class="">J.C.STAFF</td></tr><tr id="8a4165ea-e9d5-4c55-b1a6-632ad91f6baa"><td id="Hz~F" class="">7月7日－</td><td id="a}td" class="" style="width:259.6640625px">0岁幼儿全力冲刺开展第二人生</td><td id="QlSH" class="" style="width:264px">0歳児スタートダッシュ物語</td><td id="GBJW" class=""></td></tr><tr id="0384c24d-c5fb-4a49-9831-eaad410e0206"><td id="Hz~F" class="">7月7日[夏 3]－</td><td id="a}td" class="" style="width:259.6640625px">伊藤润二狂热：日本恐怖故事</td><td id="QlSH" class="" style="width:264px">伊藤潤二『マニアック』</td><td id="GBJW" class="">Studio DEEN</td></tr><tr id="9e37074e-0e9e-499b-a2d0-459407f4df99"><td id="Hz~F" class="">7月7日－</td><td id="a}td" class="" style="width:259.6640625px">神之塔（第2期）</td><td id="QlSH" class="" style="width:264px">神之塔 -Tower of God-</td><td id="GBJW" class="">The Answer Studio</td></tr><tr id="8e40c0ed-9378-407a-bd15-71744c0ca4a2"><td id="Hz~F" class="block-color-yellow_background">7月7日[夏 4]－</td><td id="a}td" class="block-color-yellow_background" style="width:259.6640625px">鹿乃子乃子乃子虎视眈眈</td><td id="QlSH" class="block-color-yellow_background" style="width:264px">しかのこのこのここしたんたん</td><td id="GBJW" class="block-color-yellow_background">WIT STUDIO</td></tr><tr id="ce4c0ae3-a37a-4e60-849a-3df225213242"><td id="Hz~F" class="">7月7日－</td><td id="a}td" class="" style="width:259.6640625px">身为VTuber的我因为忘记关台而成了传说</td><td id="QlSH" class="" style="width:264px">VTuberなんだが配信切り忘れたら伝説になってた</td><td id="GBJW" class="">TNK</td></tr><tr id="b46cb867-ea50-4033-bf59-4c03d0cd62b0"><td id="Hz~F" class="">7月7日－</td><td id="a}td" class="" style="width:259.6640625px">金肉人 完美超人始祖篇</td><td id="QlSH" class="" style="width:264px">「キン肉マン」完璧超人始祖編</td><td id="GBJW" class="">Production I.G</td></tr><tr id="2278483c-f992-44d7-b9a6-9af6b515ca7f"><td id="Hz~F" class="">7月7日－</td><td id="a}td" class="" style="width:259.6640625px">变成菜变成花</td><td id="QlSH" class="" style="width:264px">菜なれ花なれ</td><td id="GBJW" class="">P.A.WORKS</td></tr><tr id="6d40419b-2b23-4c75-b525-717403222782"><td id="Hz~F" class="">7月7日－</td><td id="a}td" class="" style="width:259.6640625px">夜游生活！</td><td id="QlSH" class="" style="width:264px">よあそびぐらしっ！</td><td id="GBJW" class="">studio HōKIBOSHI</td></tr><tr id="4129b21b-248c-459a-9118-2b85c7fbde8c"><td id="Hz~F" class="">7月7日－</td><td id="a}td" class="" style="width:259.6640625px">异世界悠闲纪行～边养娃边当冒险者～</td><td id="QlSH" class="" style="width:264px">異世界ゆるり紀行 ～子育てしながら冒険者します～</td><td id="GBJW" class="">EMT Squared</td></tr><tr id="e65f37f3-0d82-4e3a-a043-2eb39945e751"><td id="Hz~F" class="">7月8日－</td><td id="a}td" class="" style="width:259.6640625px">深夜Punch</td><td id="QlSH" class="" style="width:264px">真夜中ぱんチ</td><td id="GBJW" class="">P.A.WORKS</td></tr><tr id="ebfe0dd7-b82e-4b2c-ad56-3e059ebeeff9"><td id="Hz~F" class="">7月9日－</td><td id="a}td" class="" style="width:259.6640625px">哎咕岛消失的舔甜歌姬</td><td id="QlSH" class="" style="width:264px">エグミレガシー</td><td id="GBJW" class="">Studio Outrigger</td></tr><tr id="d7877a46-7618-4dd0-bd07-10055ddca854"><td id="Hz~F" class="">7月9日－</td><td id="a}td" class="" style="width:259.6640625px">曾经、魔法少女和邪恶相互为敌。</td><td id="QlSH" class="" style="width:264px">かつて魔法少女と悪は敵対していた。</td><td id="GBJW" class="">BONES</td></tr><tr id="71e0c1b8-3a84-4310-b0e1-b178baa45f7b"><td id="Hz~F" class="">7月9日－</td><td id="a}td" class="" style="width:259.6640625px">异世界失格</td><td id="QlSH" class="" style="width:264px">異世界失格</td><td id="GBJW" class="">Atelier Pontdarc</td></tr><tr id="2eea409e-c450-4231-8cb0-787655d82567"><td id="Hz~F" class="">7月10日－</td><td id="a}td" class="" style="width:259.6640625px">这是你与我的最后战场，或是开创世界的圣战 Season II（第2期）</td><td id="QlSH" class="" style="width:264px">キミと僕の最後の戦場、あるいは世界が始まる聖戦 Season II</td><td id="GBJW" class="">Studio Palette、SILVER LINK.</td></tr><tr id="4d0c95cb-cef4-4bb7-a716-be00f6a15204"><td id="Hz~F" class="">7月10日－</td><td id="a}td" class="" style="width:259.6640625px">双生恋情密不可分</td><td id="QlSH" class="" style="width:264px">恋は双子で割り切れない</td><td id="GBJW" class="">ROLL2</td></tr><tr id="4415fbb9-8f4e-49fc-a66d-d29b3ce0f308"><td id="Hz~F" class="">7月12日－</td><td id="a}td" class="" style="width:259.6640625px">再见，地球</td><td id="QlSH" class="" style="width:264px">ばいばい、アース</td><td id="GBJW" class="">LIDENFILMS</td></tr><tr id="ce82047b-4af2-49b8-816d-208b461cbdd3"><td id="Hz~F" class="">7月13日－</td><td id="a}td" class="" style="width:259.6640625px">为何我的世界被遗忘了？</td><td id="QlSH" class="" style="width:264px">なぜ僕の世界を誰も覚えていないのか？</td><td id="GBJW" class="">project No.9</td></tr><tr id="c406fbeb-9adc-48b2-9fcc-a28fdee47295"><td id="Hz~F" class="block-color-yellow_background">7月13日－</td><td id="a}td" class="block-color-yellow_background" style="width:259.6640625px">ATRI -My Dear Moments-</td><td id="QlSH" class="block-color-yellow_background" style="width:264px">ATRI -My Dear Moments-</td><td id="GBJW" class="block-color-yellow_background">TROYCA</td></tr><tr id="ccb178bf-195c-4189-90c0-b1185d14ab11"><td id="Hz~F" class="">7月13日－</td><td id="a}td" class="" style="width:259.6640625px">败北女角太多了！</td><td id="QlSH" class="" style="width:264px">負けヒロインが多すぎる！</td><td id="GBJW" class="">A-1 Pictures</td></tr><tr id="58f631af-f387-47ff-968c-5b11c9bc879b"><td id="Hz~F" class="">7月14日－</td><td id="a}td" class="" style="width:259.6640625px">暗芝居（第13期）</td><td id="QlSH" class="" style="width:264px">闇芝居</td><td id="GBJW" class="">ILCA</td></tr><tr id="c50743d7-4ab0-4aa4-97e4-51f042473f05"><td id="Hz~F" class="">7月17日－</td><td id="a}td" class="" style="width:259.6640625px">战国妖狐 千魔混沌篇（第2部分）</td><td id="QlSH" class="" style="width:264px">戦国妖狐 千魔混沌編</td><td id="GBJW" class="">WHITE FOX</td></tr><tr id="c498f6fb-eda5-4445-a353-979940bfa812"><td id="Hz~F" class="">7月19日－</td><td id="a}td" class="" style="width:259.6640625px">未来的黑幕系反派千金莫里亚蒂的异世界完全犯罪白书</td><td id="QlSH" class="" style="width:264px">未来の黒幕系悪役令嬢モリアーティーの異世界完全犯罪白書</td><td id="GBJW" class=""></td></tr><tr id="c056b3c3-0ff2-4649-a928-a700ef753c58"><td id="Hz~F" class="">8月7日－</td><td id="a}td" class="" style="width:259.6640625px">Delico&#x27;s Nursery</td><td id="QlSH" class="" style="width:264px">デリコズ・ナーサリー</td><td id="GBJW" class="">J.C.STAFF</td></tr><tr id="2cedfb84-a6fd-4dd6-ae51-96385e0bf002"><td id="Hz~F" class="">夏</td><td id="a}td" class="" style="width:259.6640625px">JOCHUM</td><td id="QlSH" class="" style="width:264px">JOCHUM</td><td id="GBJW" class="">Fanworks</td></tr></tbody></table><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="c5341222-e780-4185-acad-033013b2257f"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><strong>注释：</strong><ol type="1" id="3da78d68-fefe-4a6f-a48a-d6bab4186292" class="numbered-list" start="1"><li>美国于2月11日－5月5日在Adult Swim先行播放</li></ol><ol type="1" id="91206c5d-b028-48a9-9c39-ad52d729a4d2" class="numbered-list" start="2"><li>6月26日起在ABEMA先行播放</li></ol><ol type="1" id="7c94ddea-141a-4992-975c-c694dde3e4ea" class="numbered-list" start="3"><li>2023年1月19日在Netflix播放</li></ol><ol type="1" id="ee3ab525-0403-4ef7-818a-5103455108e5" class="numbered-list" start="4"><li>7月3日起在ABEMA先行播放</li></ol></div></figure></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

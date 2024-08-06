@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>2024年动画电影</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="6f74abf4-0532-4089-89e3-d0ef0f2127cd" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🎬</span></div><h1 class="page-title">2024年动画电影</h1><p class="page-description"></p></header><div class="page-body"><table id="f771696f-e0bf-4698-9f26-8c0f0f9d10cc" class="simple-table"><tbody><tr id="8f67a528-01c8-4d67-b7e2-601b4decd5ef"><td id=";^aI" class=""><strong>上映日</strong></td><td id="?LWK" class=""><strong>作品名</strong></td><td id="eXmK" class=""><strong>原名</strong></td><td id="WS@`" class=""><strong>制作公司</strong></td></tr><tr id="9280b3ea-593a-4cc2-9a72-711239454ec1"><td id=";^aI" class=""><strong>1月5日</strong></td><td id="?LWK" class="">偶像大师 闪耀色彩 第3章</td><td id="eXmK" class="">アイドルマスター シャイニーカラーズ 第3章</td><td id="WS@`" class="">Polygon Pictures</td></tr><tr id="58df53ae-69f2-4f52-a509-d5162410acee"><td id=";^aI" class=""></td><td id="?LWK" class="">BLOODY ESCAPE -地狱的逃走剧-</td><td id="eXmK" class="">BLOODY ESCAPE -地獄の逃走劇-</td><td id="WS@`" class="">Polygon Pictures</td></tr><tr id="4c24e6e2-80b1-4083-a7df-a8ba4a0e719c"><td id=";^aI" class=""></td><td id="?LWK" class="">名侦探柯南 vs. 怪盗基德</td><td id="eXmK" class="">名探偵コナン vs. 怪盗キッド</td><td id="WS@`" class="">TMS娱乐</td></tr><tr id="0afd161d-f789-4bd9-905d-f4efb072738c"><td id=";^aI" class=""><strong>1月12日</strong></td><td id="?LWK" class="">伤物语 -历·吸血鬼-</td><td id="eXmK" class="">傷物語 -こよみヴァンプ-</td><td id="WS@`" class="">SHAFT</td></tr><tr id="abbf378a-9854-4755-87b4-113675fab661"><td id=";^aI" class=""><strong>1月26日</strong></td><td id="?LWK" class="">机动战士高达SEED FREEDOM</td><td id="eXmK" class="">機動戦士ガンダムSEED FREEDOM</td><td id="WS@`" class="">日昇动画</td></tr><tr id="24b433b8-2a4d-479f-83ef-6558d72539fc"><td id=";^aI" class=""><strong>1月27日</strong></td><td id="?LWK" class="">GIVEN 被赠与的未来剧场版：柊mix</td><td id="eXmK" class="">映画 ギヴン 柊mix</td><td id="WS@`" class="">Lerche</td></tr><tr id="34e5d79c-4e3d-452b-a4ed-4d758f65dbf1"><td id=";^aI" class=""><strong>2月2日</strong></td><td id="?LWK" class="">大室家 dear sisters</td><td id="eXmK" class="">大室家 dear sisters</td><td id="WS@`" class="">Passione、Studio Lings</td></tr><tr id="ead6aea0-0c8c-4be3-ab34-8ce287f7d719"><td id=";^aI" class=""></td><td id="?LWK" class="">“鬼灭之刃”绊之奇迹，迈向柱训练</td><td id="eXmK" class="">「鬼滅の刃」絆の奇跡、そして柱稽古へ</td><td id="WS@`" class="">ufotable</td></tr><tr id="16a7c3dd-4c0f-4dcc-81ae-87ed3fbe9ce6"><td id=";^aI" class=""><strong>2月16日</strong></td><td id="?LWK" class="">剧场版 排球少年！！ 垃圾场的决战</td><td id="eXmK" class="">劇場版 ハイキュー!! ゴミ捨て場の決戦</td><td id="WS@`" class="">Production I.G</td></tr><tr id="7bbcf124-af29-4e4d-82ad-6b75d760766f"><td id=";^aI" class=""><strong>2月23日</strong></td><td id="?LWK" class="">死亡爱丽丝 最终最后的物语</td><td id="eXmK" class="">シノアリス 一番最後のモノガタリ</td><td id="WS@`" class="">ILCA</td></tr><tr id="c9a3541e-9ff8-4689-9bfe-a3ff9cf8dac5"><td id=";^aI" class=""><strong>3月1日</strong></td><td id="?LWK" class="">哆啦A梦电影：大雄的地球交响乐</td><td id="eXmK" class="">映画ドラえもん のび太の地球交響楽</td><td id="WS@`" class="">新锐动画</td></tr><tr id="798631f6-b5e6-4426-b263-1251afa31cb3"><td id=";^aI" class=""></td><td id="?LWK" class="">派对咖孔明 Road to Summer Sonia</td><td id="eXmK" class="">パリピ孔明 Road to Summer Sonia</td><td id="WS@`" class="">P.A.WORKS</td></tr><tr id="c0b1f3e7-9290-4f54-b76f-5a58e2214841"><td id=";^aI" class=""><strong>3月8日</strong></td><td id="?LWK" class="">电影 可爱巧虎岛 奇迹之岛的七色康乃馨</td><td id="eXmK" class="">映画しまじろう ミラクルじまの なないろカーネーション</td><td id="WS@`" class="">上海合源文化传媒有限公司、白组</td></tr><tr id="323d9232-f408-4176-9189-f697998cb8df"><td id=";^aI" class=""><strong>3月20日</strong></td><td id="?LWK" class="">屁屁侦探电影：再见亲爱的伙伴（屁屁）啊</td><td id="eXmK" class="">映画おしりたんてい さらば愛しき相棒（おしり）よ</td><td id="WS@`" class="">东映动画</td></tr><tr id="38647fde-7910-4129-881b-2e7383b84eae"><td id=";^aI" class=""><strong>3月22日</strong></td><td id="?LWK" class="">DEAD DEAD DEMON&#x27;S DEDEDEDE DESTRUCTION 恶魔的破坏 前章</td><td id="eXmK" class="">デッドデッドデーモンズデデデデデストラクション 前章</td><td id="WS@`" class="">Production +h.</td></tr><tr id="90cf5272-0db1-46f9-a9fe-4dbeb15abb1e"><td id=";^aI" class=""><strong>4月12日</strong></td><td id="?LWK" class="">名侦探柯南：100万美元的五棱星</td><td id="eXmK" class="">名探偵コナン 100万ドルの五稜星</td><td id="WS@`" class="">TMS/第1工作室</td></tr><tr id="d5e25682-00bc-44fe-9419-d1b7feb15e03"><td id=";^aI" class=""></td><td id="?LWK" class="">昏行者</td><td id="eXmK" class="">クラユカバ</td><td id="WS@`" class="">Team OneOne</td></tr><tr id="396ed037-7e1b-434b-9be8-d97cf0c84ee8"><td id=";^aI" class=""></td><td id="?LWK" class="">炫目篝火</td><td id="eXmK" class="">クラメルカガリ</td><td id="WS@`" class="">Team OneOne</td></tr><tr id="5acdce4c-b29f-41d0-a6aa-5e26a41c8aad"><td id=";^aI" class=""><strong>4月19日</strong></td><td id="?LWK" class="">剧场版 BLUE LOCK 蓝色监狱 -EPISODE 凪-</td><td id="eXmK" class="">劇場版ブルーロック -EPISODE 凪-</td><td id="WS@`" class="">8bit</td></tr><tr id="e82ef1a7-5864-4e4c-8484-3967e920d43a"><td id=";^aI" class=""><strong>5月10日</strong></td><td id="?LWK" class="">成为星星的少女</td><td id="eXmK" class="">トラペジウム</td><td id="WS@`" class="">CloverWorks</td></tr><tr id="61013bf9-6305-468d-a435-52a0dc629111"><td id=";^aI" class=""></td><td id="?LWK" class="">Code Geass 夺回的Rozé 第1幕</td><td id="eXmK" class="">コードギアス 奪還のロゼ 第1幕</td><td id="WS@`" class="">日昇动画</td></tr><tr id="798ef258-6bf5-4e01-8c3f-7bce394f5829"><td id=";^aI" class=""></td><td id="?LWK" class="">赛马娘 Pretty Derby ROAD TO THE TOP（剧场用再编辑版）</td><td id="eXmK" class="">ウマ娘 プリティーダービー ROAD TO THE TOP</td><td id="WS@`" class="">CygamesPictures</td></tr><tr id="7d1cc6c4-748a-4cec-be4c-029eaed0966e"><td id=";^aI" class=""><strong>5月17日</strong></td><td id="?LWK" class="">i☆Ris the Movie -Full Energy!!-</td><td id="eXmK" class="">i☆Ris the Movie -Full Energy!!-</td><td id="WS@`" class="">Studio五组</td></tr><tr id="b26d0437-40ca-4aed-a2d7-634f16d7e450"><td id=";^aI" class=""><strong>5月24日</strong></td><td id="?LWK" class="">赛马娘 Pretty Derby 新时代之门</td><td id="eXmK" class="">ウマ娘 プリティーダービー 新時代の扉</td><td id="WS@`" class="">CygamesPictures</td></tr><tr id="2202e061-8854-41a7-828d-d5ee76dec36f"><td id=";^aI" class=""></td><td id="?LWK" class="">我的鬼女孩</td><td id="eXmK" class="">好きでも嫌いなあまのじゃく</td><td id="WS@`" class="">STUDIO COLORIDO</td></tr><tr id="00d8b634-fc44-4571-8c40-464d5b57ee05"><td id=";^aI" class=""></td><td id="?LWK" class="">DEAD DEAD DEMON&#x27;S DEDEDEDE DESTRUCTION 恶魔的破坏 后章</td><td id="eXmK" class="">デッドデッドデーモンズデデデデデストラクション 後章</td><td id="WS@`" class="">Production +h.</td></tr><tr id="bc2e95da-383e-4264-a101-473329f7fee4"><td id=";^aI" class=""><strong>6月7日</strong></td><td id="?LWK" class="">Code Geass 夺回的Rozé 第2幕</td><td id="eXmK" class="">コードギアス 奪還のロゼ 第2幕</td><td id="WS@`" class="">日昇动画</td></tr><tr id="510fce75-6a45-4c06-95d5-0cffe96fbbcc"><td id=";^aI" class=""></td><td id="?LWK" class="">剧场总集篇 孤独摇滚！Re:</td><td id="eXmK" class="">劇場総集編ぼっち・ざ・ろっく！ Re:</td><td id="WS@`" class="">CloverWorks</td></tr><tr id="7454d44c-4f1d-44bc-8967-260004dfb512"><td id=";^aI" class=""><strong>6月14日</strong></td><td id="?LWK" class="">RABBITS KINGDOM THE MOVIE</td><td id="eXmK" class="">RABBITS KINGDOM THE MOVIE</td><td id="WS@`" class="">Studio SIGN</td></tr><tr id="fbaf237f-0298-42ce-a1cd-e62507d3f2bd"><td id=";^aI" class=""></td><td id="?LWK" class="">数分间的应援</td><td id="eXmK" class="">数分間のエールを</td><td id="WS@`" class="">Hurray!、100studio</td></tr><tr id="5bfced3f-a2d7-4d52-8f32-852157ef5c95"><td id=";^aI" class=""><strong>6月21日</strong></td><td id="?LWK" class="">大室家 dear friends</td><td id="eXmK" class="">大室家 dear friends</td><td id="WS@`" class="">Passione、Studio Lings</td></tr><tr id="7959c621-400d-4b66-bd12-e9b5f6dbd396"><td id=";^aI" class=""><strong>6月28日</strong></td><td id="?LWK" class=""></td><td id="eXmK" class="">それいけ！アンパンマン ばいきんまんとえほんのルルン</td><td id="WS@`" class=""></td></tr><tr id="c5d32605-f08f-4af8-88e1-77509e09ba9a"><td id=";^aI" class=""></td><td id="?LWK" class="">蓦然回首</td><td id="eXmK" class="">ルックバック</td><td id="WS@`" class="">Studio Durian</td></tr><tr id="9fac8056-0fb3-4165-bf48-1a9ee900b8e8"><td id=";^aI" class=""><strong>7月5日</strong></td><td id="?LWK" class="">偶像大师 闪耀色彩 第2季第1章</td><td id="eXmK" class="">アイドルマスター シャイニーカラーズ 2nd season 第1章</td><td id="WS@`" class="">Polygon Pictures</td></tr><tr id="51ea3dc1-919c-44f3-945a-5e19c5c776fb"><td id=";^aI" class=""></td><td id="?LWK" class="">Code Geass 夺回的Rozé 第3幕</td><td id="eXmK" class="">コードギアス 奪還のロゼ 第3幕</td><td id="WS@`" class="">日昇动画</td></tr><tr id="aa954e75-cdf2-4b65-9c5c-00e474dbd5af"><td id=";^aI" class=""><strong>7月19日</strong></td><td id="?LWK" class="">永远的大和号 REBEL3199 第一章 黑之侵略</td><td id="eXmK" class="">『ヤマトよ永遠に REBEL3199』第一章 黒の侵略</td><td id="WS@`" class="">studio MOTHER</td></tr><tr id="32bda3b6-d52a-4f39-921f-26db780f7749"><td id=";^aI" class=""></td><td id="?LWK" class="">妖怪猫小杏</td><td id="eXmK" class="">化け猫あんずちゃん</td><td id="WS@`" class="">新锐动画、Miyu Productions</td></tr><tr id="b50a082c-f7c3-46b2-9e69-338a2cabf26c"><td id=";^aI" class=""></td><td id="?LWK" class="">剧场版草莓王子 起始的物语～Strawberry School Festival!!!～</td><td id="eXmK" class="">劇場版すとぷり はじまりの物語～Strawberry School Festival!!!～</td><td id="WS@`" class="">LIDENFILMS</td></tr><tr id="d5d26321-aedc-48ab-8391-fc30d0ad4266"><td id=";^aI" class=""><strong>7月26日</strong></td><td id="?LWK" class="">剧场版物怪 唐伞</td><td id="eXmK" class="">劇場版モノノ怪 唐傘</td><td id="WS@`" class="">EOTA</td></tr><tr id="ec27bd5b-c55c-45bc-b4a4-03a50d6ef2a2"><td id=";^aI" class=""><strong>8月2日</strong></td><td id="?LWK" class="">我的英雄学院剧场版：YOU&#x27;RE NEXT</td><td id="eXmK" class="">僕のヒーローアカデミア THE MOVIE ユアネクスト</td><td id="WS@`" class="">BONES</td></tr><tr id="08a10fd7-e734-4791-9dd6-36cc30ae850b"><td id=";^aI" class=""></td><td id="?LWK" class="">Code Geass 夺回的Rozé 最终幕</td><td id="eXmK" class="">コードギアス 奪還のロゼ 最終幕</td><td id="WS@`" class="">日昇动画</td></tr><tr id="708dfd67-31ad-4dbd-a2b3-365693b3ceac"><td id=";^aI" class=""><strong>8月9日</strong></td><td id="?LWK" class="">蜡笔小新：我们的恐龙日记</td><td id="eXmK" class="">クレヨンしんちゃん オラたちの恐竜日記</td><td id="WS@`" class="">新锐动画</td></tr><tr id="62917d0a-fb33-49b0-a986-c49f52c78300"><td id=";^aI" class=""></td><td id="?LWK" class="">剧场总集篇 孤独摇滚！Re:Re:</td><td id="eXmK" class="">劇場総集編ぼっち・ざ・ろっく！ Re:Re:</td><td id="WS@`" class="">CloverWorks</td></tr><tr id="7e2a6d6f-831a-4f32-a4d8-05f3d4654825"><td id=";^aI" class=""><strong>8月16日</strong></td><td id="?LWK" class="">KING OF PRISM -Dramatic PRISM.1-</td><td id="eXmK" class="">KING OF PRISM -Dramatic PRISM.1-</td><td id="WS@`" class="">龙之子</td></tr><tr id="cf676269-d67c-47ad-ad4f-f107639bf0b9"><td id=";^aI" class=""></td><td id="?LWK" class="">刀剑乱舞 回 -々传 近侍之人-</td><td id="eXmK" class="">刀剣乱舞 廻 -々伝 近し侍らうものら-</td><td id="WS@`" class="">DOMERICA</td></tr><tr id="f7d35271-4409-4dc6-8a4d-cc42acc6c910"><td id=";^aI" class=""></td><td id="?LWK" class="">ZEGAPAIN STA</td><td id="eXmK" class="">ゼーガペインSTA</td><td id="WS@`" class="">日昇动画</td></tr><tr id="c60f1291-ae4c-4c20-86d3-67b5c5e09448"><td id=";^aI" class=""><strong>8月23日</strong></td><td id="?LWK" class="">偶像大师 闪耀色彩 第2季第2章</td><td id="eXmK" class="">アイドルマスター シャイニーカラーズ 2nd season 第2章</td><td id="WS@`" class="">Polygon Pictures</td></tr><tr id="7f0ae0f7-d7ca-42c8-b0b3-80fa64bcb79a"><td id=";^aI" class=""><strong>8月30日</strong></td><td id="?LWK" class="">你的颜色</td><td id="eXmK" class="">きみの色</td><td id="WS@`" class="">SCIENCE SARU</td></tr><tr id="03a67903-5cc4-49a2-b8b2-eb4bf07f3bac"><td id=";^aI" class=""><strong>9月6日</strong></td><td id="?LWK" class="">Love Live! 虹咲学园学园偶像同好会 完结篇 第1章</td><td id="eXmK" class="">ラブライブ！虹ヶ咲学園スクールアイドル同好会 完結編 第1章</td><td id="WS@`" class="">日昇动画</td></tr><tr id="46eddee3-4518-466c-85e2-c7a10d4d4729"><td id=";^aI" class=""><strong>9月13日</strong></td><td id="?LWK" class="">美妙宠物 光之美少女！The Movie！心跳不已♡游戏世界大冒险！</td><td id="eXmK" class="">わんだふるぷりきゅあ！ざ・むーびー！ ドキドキ♡ゲームの世界で大冒険！</td><td id="WS@`" class="">东映动画</td></tr><tr id="f4db191f-7281-48a7-80fd-8e0e04b4d305"><td id=";^aI" class=""><strong>9月20日</strong></td><td id="?LWK" class="">偶像大师 闪耀色彩 第2季第3章</td><td id="eXmK" class="">アイドルマスター シャイニーカラーズ 2nd season 第3章</td><td id="WS@`" class="">Polygon Pictures</td></tr><tr id="37caa027-8298-4dd3-9585-22987e2386ea"><td id=";^aI" class=""></td><td id="?LWK" class="">剧场版 OVERLORD 圣王国篇</td><td id="eXmK" class="">劇場版「オーバーロード」聖王国編</td><td id="WS@`" class="">MADHOUSE</td></tr><tr id="63f66e28-6cc7-438b-864f-4cba32dc703f"><td id=";^aI" class=""></td><td id="?LWK" class="">GIVEN 被赠与的未来剧场版：去海边</td><td id="eXmK" class="">映画 ギヴン 海へ</td><td id="WS@`" class="">Lerche</td></tr><tr id="90c5d710-1a78-47e3-9ab4-0efcfdbbf530"><td id=";^aI" class=""><strong>9月27日</strong></td><td id="?LWK" class="">剧场版 BanG Dream! It&#x27;s MyGO!!!!! 前篇</td><td id="eXmK" class="">劇場版「BanG Dream! It&#x27;s MyGO!!!!! 前編 : 春の陽だまり、迷い猫」</td><td id="WS@`" class="">三次元</td></tr><tr id="37256ec3-ad8a-4da2-bb1d-da61ae991fbd"><td id=";^aI" class=""><strong>10月4日</strong></td><td id="?LWK" class="">触碰。</td><td id="eXmK" class="">ふれる。</td><td id="WS@`" class="">CloverWorks</td></tr><tr id="c3a1cc4e-6784-43ea-9518-ed34736947f5"><td id=";^aI" class=""><strong>10月25日</strong></td><td id="?LWK" class="">击浪青春</td><td id="eXmK" class="">がんばっていきまっしょい</td><td id="WS@`" class="">萌、REIRS</td></tr><tr id="eb9591e4-fcf2-44cc-b821-76a47255d771"><td id=";^aI" class=""><strong>11月8日</strong></td><td id="?LWK" class="">风都侦探 假面骑士Skull的肖像</td><td id="eXmK" class="">風都探偵 仮面ライダースカルの肖像</td><td id="WS@`" class="">STUDIO KAI</td></tr><tr id="235c2798-d4e1-4f2b-bc9c-66cede382193"><td id=";^aI" class=""></td><td id="?LWK" class="">剧场版 BanG Dream! It&#x27;s MyGO!!!!! 后篇</td><td id="eXmK" class="">劇場版「BanG Dream! It&#x27;s MyGO!!!!! 後編 : うたう、僕らになれるうた &amp; FILM LIVE」</td><td id="WS@`" class="">三次元</td></tr><tr id="42898dc4-9c12-4ec5-8372-aa34e7a07b2f"><td id=";^aI" class=""><strong>11月22日</strong></td><td id="?LWK" class="">永远的大和号 REBEL3199 第二章 赤日之出击</td><td id="eXmK" class="">『ヤマトよ永遠に REBEL3199』第二章 赤日の出撃</td><td id="WS@`" class="">studio MOTHER</td></tr><tr id="36e431ac-a239-48ef-9f0c-00cf57c763ad"><td id=";^aI" class=""><strong>11月29日</strong></td><td id="?LWK" class="">PUI PUI 天竺鼠车车 THE MOVIE MOLMAX</td><td id="eXmK" class="">PUI PUI モルカー ザ・ムービー MOLMAX</td><td id="WS@`" class=""></td></tr><tr id="20d2fc0e-7bc8-49f3-8084-b6eabe7bcfda"><td id=";^aI" class=""><strong>12月20日</strong></td><td id="?LWK" class="">剧场版 忍者乱太郎 毒竹忍者队最强之军师</td><td id="eXmK" class="">劇場版 忍たま乱太郎 ドクタケ忍者隊最強の軍師</td><td id="WS@`" class="">亚细亚堂</td></tr><tr id="3d63a1bb-1160-4d31-b764-b9f320acfa7b"><td id=";^aI" class=""><strong>冬</strong></td><td id="?LWK" class="">剧场版 我与机器子</td><td id="eXmK" class="">劇場版 僕とロボコ</td><td id="WS@`" class="">GALLOP</td></tr><tr id="c23bd16d-adf7-4dab-bfd1-2bb7520c0560"><td id=";^aI" class=""></td><td id="?LWK" class="">剧场版 魔法少女小圆 〈魔女之夜的回天〉</td><td id="eXmK" class="">劇場版 魔法少女まどか☆マギカ 〈ワルプルギスの廻天〉</td><td id="WS@`" class="">SHAFT</td></tr><tr id="ff400c2a-2e48-4b17-87ae-9fbb674f7ef4"><td id=";^aI" class=""><strong>2024年内</strong></td><td id="?LWK" class="">如果30岁还是处男，似乎就能成为魔法师 特别编辑版</td><td id="eXmK" class="">30歳まで童貞だと魔法使いになれるらしい 特別編集版</td><td id="WS@`" class="">SATELIGHT</td></tr></tbody></table></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

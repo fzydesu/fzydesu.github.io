@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>【2024参考列表】</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="50e4a09e-94eb-4b52-acf5-898e01aa922f" class="page sans"><header><h1 class="page-title">【2024参考列表】</h1><p class="page-description"></p></header><div class="page-body"><ol type="1" id="61233346-08ce-4aef-9c0f-560d9b6258c1" class="numbered-list" start="1"><li><a href="https://natalie.mu/comic/news/549626">「百千さん家のあやかし王子」火車役は八代拓、那智篁役は羽多野渉　本PVも公開に</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-18 [2023-11-18] <strong>（日语）</strong>.</li></ol><ol type="1" id="8e5aa02b-661b-4a2d-a901-9b660716939d" class="numbered-list" start="2"><li><a href="https://natalie.mu/comic/news/549649">「結婚指輪物語」1月6日放送開始、本ビジュアル＆本PV公開　坂田将吾と千葉繁の出演も</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-17 [2023-11-17] <strong>（日语）</strong>.</li></ol><ol type="1" id="bd199412-2144-4282-8380-46dd6f6d6bf6" class="numbered-list" start="3"><li><a href="https://natalie.mu/comic/news/549532">「BASTARD!!」第2期が2024年1月よりテレビ放送決定、初回は90分SP</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-17 [2023-11-17] <strong>（日语）</strong>.</li></ol><ol type="1" id="378b3331-f51b-44f8-a544-30dfd99b2695" class="numbered-list" start="4"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-3"><strong>^</strong></a><a href="https://natalie.mu/comic/news/550474">アニメ「よう実」3期、放送開始日が2024年1月3日に決定</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-25 [2023-11-25] <strong>（日语）</strong>.</li></ol><ol type="1" id="7be878a3-a94f-4139-bd49-db475727251f" class="numbered-list" start="5"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-4"><strong>^</strong></a><a href="https://natalie.mu/comic/news/549393">「即死チート」キャラ大集合のキービジュ、石井マーク・野上翔・関根明良の出演が決定</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-16 [2023-11-16] <strong>（日语）</strong>.</li></ol><ol type="1" id="d68d69aa-4956-43c2-b309-a325ed3bc69f" class="numbered-list" start="6"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-5"><strong>^</strong></a><a href="https://natalie.mu/comic/news/549626">「百千さん家のあやかし王子」火車役は八代拓、那智篁役は羽多野渉　本PVも公開に</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-18 [2023-11-18] <strong>（日语）</strong>.</li></ol><ol type="1" id="2e1174e8-a623-4e66-ac23-dbbfd105f0ce" class="numbered-list" start="7"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-6"><strong>^</strong></a><a href="https://natalie.mu/comic/news/549649">「結婚指輪物語」1月6日放送開始、本ビジュアル＆本PV公開　坂田将吾と千葉繁の出演も</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-17 [2023-11-17] <strong>（日语）</strong>.</li></ol><ol type="1" id="1c205682-fc14-42d9-a443-44ed370912a4" class="numbered-list" start="8"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-7"><strong>^</strong></a><a href="https://natalie.mu/comic/news/550285">「ゆびさきと恋々」キービジュアルが公開、エマ役と心役は東山奈央と畠中祐</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-23 [2023-11-23] <strong>（日语）</strong>.</li></ol><ol type="1" id="04afbbca-3eef-4a32-86c6-8a780648be1c" class="numbered-list" start="9"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-8"><strong>^</strong></a><a href="https://natalie.mu/comic/news/542394">アニメ「キングダム」第5シリーズ“SIDE桓騎軍”のビジュアル公開、キャストコメントも</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-25 [2023-09-25]. （原始内容<a href="https://web.archive.org/web/20231004110011/https:/natalie.mu/comic/news/542394">存档</a>于2023-10-04） <strong>（日语）</strong>.</li></ol><ol type="1" id="fccfe157-0569-4348-b31c-ec4edd8b90d9" class="numbered-list" start="10"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-9"><strong>^</strong></a><a href="https://natalie.mu/comic/news/549661">「もふなで」追加キャストに梅田修一朗・古谷徹ら7人、OP聴ける新PVも公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-18 [2023-11-18] <strong>（日语）</strong>.</li></ol><ol type="1" id="18fe99fc-b8fa-4d0e-b4f7-4583b322ec86" class="numbered-list" start="11"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-10"><strong>^</strong></a><a href="https://natalie.mu/comic/news/547944">「ルプなな」1月7日放送開始、7週連続で毎日異なる企画を公開するループ7Weeks始動</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-05 [2023-11-05]. （原始内容<a href="https://web.archive.org/web/20231107141545/https:/natalie.mu/comic/news/547944">存档</a>于2023-11-07） <strong>（日语）</strong>.</li></ol><ol type="1" id="720cb598-0ae2-4cfe-affa-f097d16dbde6" class="numbered-list" start="12"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-11"><strong>^</strong></a><a href="https://natalie.mu/comic/news/549114">アニメ「SHAMAN KING」続編のOPテーマは水樹奈々の新曲　新キャラ登場のPV公開</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-14 [2023-11-14] <strong>（日语）</strong>.</li></ol><ol type="1" id="c382a508-57a7-465b-8fab-49de02c0ab88" class="numbered-list" start="13"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-12"><strong>^</strong></a><a href="https://sengoku-youko.com/news/detail.php?id=16">「戦国妖狐」世直し姉弟編の放送日時が決定！1月10日より最速放送！</a>. 电视动画《战国妖狐》官方网站. 2023-11-09 [2023-11-09] <strong>（日语）</strong>.</li></ol><ol type="1" id="a03a3ad6-1f2e-4f43-af7e-7fb80568e367" class="numbered-list" start="14"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-13"><strong>^</strong></a><a href="https://natalie.mu/comic/news/549559">「チェリまほ」安達と黒沢が肩を並べて歩くキービジュアル、キャスト登壇上映会も発表</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-17 [2023-11-17] <strong>（日语）</strong>.</li></ol><ol type="1" id="013f05ed-8684-4ee8-a456-2b66fef2fe1e" class="numbered-list" start="15"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-14"><strong>^</strong></a><a href="https://natalie.mu/comic/news/540990">アニメ「最弱テイマー」放送は1月12日スタート、キービジュアルもお披露目</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-14 [2023-09-14]. （原始内容<a href="https://web.archive.org/web/20230919101907/https:/natalie.mu/comic/news/540990">存档</a>于2023-09-19） <strong>（日语）</strong>.</li></ol><ol type="1" id="c6a41ca8-bcb6-4498-a2e1-3033bb792738" class="numbered-list" start="16"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-15"><strong>^</strong></a><a href="https://natalie.mu/comic/news/550382">内海紘子×MAPPAのアニメ「ぶっちぎり?!」キャスト情報一挙解禁、メインPVも</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-24 [2023-11-24] <strong>（日语）</strong>.</li></ol><ol type="1" id="52d23478-8e00-4390-a6d6-2c276e17007e" class="numbered-list" start="17"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-16"><strong>^</strong></a><a href="https://natalie.mu/comic/news/508438">アニメ「超普通県チバ伝説」来年1月より地上波放送、共同製作にフロンティアワークス</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-01-11 [2023-01-11]. （原始内容<a href="https://web.archive.org/web/20230114175712/https:/natalie.mu/comic/news/508438">存档</a>于2023-01-14） <strong>（日语）</strong>.</li></ol><ol type="1" id="3d508ec6-1407-4022-8d70-c79dd25ca808" class="numbered-list" start="18"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-17"><strong>^</strong></a><a href="https://natalie.mu/comic/news/517672">ボンズ設立25周年記念アニメ「メタリックルージュ」2024年1月放送、監督は出渕裕</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-03-22 [2023-03-22]. （原始内容<a href="https://web.archive.org/web/20230331180428/https:/natalie.mu/comic/news/517672">存档</a>于2023-03-31） <strong>（日语）</strong>.</li></ol><ol type="1" id="ecdd2268-2e16-4c72-9565-53eaf5f919a4" class="numbered-list" start="19"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-18"><strong>^</strong></a><a href="https://www.youtube.com/watch?v=ogikyG09W8w">【公式PV】魔都精兵のスレイブ（CV 鬼頭明里 広瀬裕也）【10巻発売記念】</a>. <a href="https://zh.wikipedia.org/wiki/YouTube">YouTube</a>. 2022-05-01 [2022-05-01]. （原始内容<a href="https://web.archive.org/web/20220505004559/https:/www.youtube.com/watch?v=ogikyG09W8w">存档</a>于2022-05-05）.</li></ol><ol type="1" id="1cbd65b0-a474-4884-a0b4-bac5b8c9cafa" class="numbered-list" start="20"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-19"><strong>^</strong></a><a href="https://natalie.mu/comic/news/518099">「魔都精兵のスレイブ」来年1月放送、七番組とスレイブ化した優希のビジュアル公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-03-25 [2023-03-25]. （原始内容<a href="https://web.archive.org/web/20230401063234/https:/natalie.mu/comic/news/518099">存档</a>于2023-04-01） <strong>（日语）</strong>.</li></ol><ol type="1" id="d3ac8598-2c5b-492e-bd98-b31a61f84ced" class="numbered-list" start="21"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-20"><strong>^</strong></a><a href="https://mantan-web.jp/article/20230523dog00m200026000c.html">ぽんのみち：講談社のオリジナルテレビアニメ　「五等分の花嫁」春場ねぎがキャラ原案　前田佳織里、佐伯伊織、若山詩音、近藤唯出演</a>. MANTANWEB. 2023-05-23 [2023-05-23]. （原始内容<a href="https://web.archive.org/web/20230526054859/https:/mantan-web.jp/article/20230523dog00m200026000c.html">存档</a>于2023-05-26） <strong>（日语）</strong>.</li></ol><ol type="1" id="25bf9482-6d54-4353-a126-92a11ce6169f" class="numbered-list" start="22"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-21"><strong>^</strong></a><a href="https://natalie.mu/comic/news/525937">「ダンジョン飯」来年1月放送開始　ライオス一行のキャストに熊谷健太郎、千本木彩花ら</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-05-25 [2023-05-25] <strong>（日语）</strong>.</li></ol><ol type="1" id="d343ff84-42fb-4a79-aaa3-8c874e99f024" class="numbered-list" start="23"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-22"><strong>^</strong></a><a href="https://natalie.mu/comic/news/529231">アニメ「僕の心のヤバイやつ」第2期決定！来年1月から放送、桜井のりおがお祝い</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-06-18 [2023-06-18]. （原始内容<a href="https://web.archive.org/web/20230705040540/https:/natalie.mu/comic/news/529231">存档</a>于2023-07-05） <strong>（日语）</strong>.</li></ol><ol type="1" id="0d44f73b-eb3c-452f-9e8e-0b25c28dd49b" class="numbered-list" start="24"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-23"><strong>^</strong></a><a href="https://natalie.mu/comic/news/530304">「弱キャラ友崎くん」第2期の放送開始は2024年1月、ティザービジュアル第2弾公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-06-26 [2023-06-26]. （原始内容<a href="https://web.archive.org/web/20230626091725/https:/natalie.mu/comic/news/530304">存档</a>于2023-06-26） <strong>（日语）</strong>.</li></ol><ol type="1" id="c28187a6-9cfc-4b09-9826-7eb476e8b22d" class="numbered-list" start="25"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-24"><strong>^</strong></a><a href="https://natalie.mu/comic/news/530392">「姫様“拷問”の時間です」アニメ化！白石晴香が拷問耐える姫騎士に、放送は1月</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-06-27 [2023-06-27]. （原始内容<a href="https://web.archive.org/web/20230627074655/https:/natalie.mu/comic/news/530392">存档</a>于2023-06-27） <strong>（日语）</strong>.</li></ol><ol type="1" id="dee4dce0-0b43-41c5-ab01-defbb7303fb8" class="numbered-list" start="26"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-25"><strong>^</strong></a><a href="https://natalie.mu/comic/news/530857">アニメ「外科医エリーゼ」2024年1月放送、キャストに石川由依・阿座上洋平・細谷佳正</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-06-29 [2023-06-29]. （原始内容<a href="https://web.archive.org/web/20230630065121/https:/natalie.mu/comic/news/530857">存档</a>于2023-06-30） <strong>（日语）</strong>.</li></ol><ol type="1" id="81c1242b-9fab-49bb-a059-29c9c569aabe" class="numbered-list" start="27"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-26"><strong>^</strong></a><a href="https://natalie.mu/comic/news/531026">「マッシュル-MASHLE-」第2期の制作決定！放送は来年1月から、特報も公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-07-01 [2023-07-01] <strong>（日语）</strong>.</li></ol><ol type="1" id="80fa5a98-4a61-404e-8836-e8a815060162" class="numbered-list" start="28"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-27"><strong>^</strong></a><a href="https://natalie.mu/comic/news/531399">「道産子ギャル」キービジュアルと第1弾PV公開、追加キャストに花守ゆみりと上田麗奈</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-07-04 [2023-07-04] <strong>（日语）</strong>.</li></ol><ol type="1" id="e3f39ce1-2fa3-4f1b-9c76-1c9474cbade7" class="numbered-list" start="29"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-28"><strong>^</strong></a><a href="https://natalie.mu/comic/news/532676">「月が導く異世界道中」第2期は来年1月より2クール、アニメ制作はC.STAFFが担当</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-07-13 [2023-07-13]. （原始内容<a href="https://web.archive.org/web/20230713160004/https:/natalie.mu/comic/news/532676">存档</a>于2023-07-13） <strong>（日语）</strong>.</li></ol><ol type="1" id="feebff7c-347e-40d9-ae73-6669f4f2eef4" class="numbered-list" start="30"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-29"><strong>^</strong></a><a href="https://natalie.mu/comic/news/532808">アニメ「魔女と野獣」は2024年1月放送開始　ギド役は大地葉、アシャフ役は森川智之</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-07-13 [2023-07-13] <strong>（日语）</strong>.</li></ol><ol type="1" id="8aff8a33-fbaf-4276-80c7-6e87011f25d1" class="numbered-list" start="31"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-30"><strong>^</strong></a><a href="https://mantan-web.jp/article/20230716dog00m200048000c.html">異修羅：テレビアニメが2024年1月スタート　山寺宏一が音斬りシャルクに　パッショーネ制作</a>. MANTANWEB. 2023-07-16 [2023-07-16]. （原始内容<a href="https://web.archive.org/web/20230717090522/https:/mantan-web.jp/article/20230716dog00m200048000c.html">存档</a>于2023-07-17） <strong>（日语）</strong>.</li></ol><ol type="1" id="0f165c49-7006-4b22-bbf1-10b831ff69ed" class="numbered-list" start="32"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-31"><strong>^</strong></a><a href="https://natalie.mu/comic/news/535232">アニメ「HIGH CARD」season2は来年1月放送開始、PV第1弾公開　舞台化も決定</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-08-01 [2023-08-01]. （原始内容<a href="https://web.archive.org/web/20230802144401/https:/natalie.mu/comic/news/535232">存档</a>于2023-08-02） <strong>（日语）</strong>.</li></ol><ol type="1" id="ad02da9c-64de-4afe-ad2d-4a2032203f80" class="numbered-list" start="33"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-32"><strong>^</strong></a><a href="https://natalie.mu/comic/news/537911">TVアニメ「うる星やつら」第2期は2024年1月から放送、キービジュに新キャラの姿も</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-08-23 [2023-08-23]. （原始内容<a href="https://web.archive.org/web/20230825184643/https:/natalie.mu/comic/news/537911">存档</a>于2023-08-25） <strong>（日语）</strong>.</li></ol><ol type="1" id="cebedf7e-46ad-400a-b4b2-df2540b546fd" class="numbered-list" start="34"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-33"><strong>^</strong></a><a href="https://natalie.mu/comic/news/538546">「治癒魔法の間違った使い方」追加キャスト＆キャラボイス入りのPV第1弾解禁</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-08-27 [2023-08-27] <strong>（日语）</strong>.</li></ol><ol type="1" id="c9f697a7-794a-478b-b7cc-185e90e7aa98" class="numbered-list" start="35"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-34"><strong>^</strong></a><a href="https://natalie.mu/comic/news/540331">「悪役令嬢レベル99」ユミエラ役はファイルーズあい、PV・キービジュアル公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-09 [2023-09-09]. （原始内容<a href="https://web.archive.org/web/20230913081314/https:/natalie.mu/comic/news/540331">存档</a>于2023-09-13） <strong>（日语）</strong>.</li></ol><ol type="1" id="1f87b5cf-b615-4f34-9155-472690639467" class="numbered-list" start="36"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-35"><strong>^</strong></a><a href="https://natalie.mu/comic/news/540428">アニメ「青の祓魔師」新シリーズ「島根啓明結社篇」来年1月放送、キャストは全員続投</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-10 [2023-09-10]. （原始内容<a href="https://web.archive.org/web/20230915143438/https:/natalie.mu/comic/news/540428">存档</a>于2023-09-15） <strong>（日语）</strong>.</li></ol><ol type="1" id="ea9ec4ba-8e90-486d-99f3-da3c32088771" class="numbered-list" start="37"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-36"><strong>^</strong></a><a href="https://natalie.mu/comic/news/540453">TVアニメ「俺だけレベルアップな件」来年1月放送開始、水篠旬の姿を捉えたPVも</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-10 [2023-09-10]. （原始内容<a href="https://web.archive.org/web/20230917194910/https:/natalie.mu/comic/news/540453">存档</a>于2023-09-17） <strong>（日语）</strong>.</li></ol><ol type="1" id="5204230e-5cf3-441d-93bf-39111eb2013f" class="numbered-list" start="38"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-37"><strong>^</strong></a><a href="https://natalie.mu/comic/news/540900">「貼りまわれ！こいぬ」2024年1月にアニメ化！うかうかも監修しながら大いに楽しむ</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-13 [2023-09-13]. （原始内容<a href="https://web.archive.org/web/20231014180601/https:/natalie.mu/comic/news/540900">存档</a>于2023-10-14） <strong>（日语）</strong>.</li></ol><ol type="1" id="12d0a6e0-af3d-4df9-9995-ec4f22462b4b" class="numbered-list" start="39"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-38"><strong>^</strong></a><a href="https://natalie.mu/comic/news/541654">主人公は超常現象雑誌の編集部員、アニメ「月刊モー想科学」キャストなど一挙解禁</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-19 [2023-09-19]. （原始内容<a href="https://web.archive.org/web/20231004110010/https:/natalie.mu/comic/news/541654">存档</a>于2023-10-04） <strong>（日语）</strong>.</li></ol><ol type="1" id="03d62ae5-764f-451f-9b6f-6ecf925b55ef" class="numbered-list" start="40"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-39"><strong>^</strong></a><a href="https://natalie.mu/comic/news/542286">アニメ「真の仲間」第2期は2024年1月から　PV第1弾とキャラビジュ、スタッフ情報公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-24 [2023-09-24]. （原始内容<a href="https://web.archive.org/web/20231012051639/https:/natalie.mu/comic/news/542286">存档</a>于2023-10-12） <strong>（日语）</strong>.</li></ol><ol type="1" id="636a72bd-f2ea-4380-ad06-d86d9e26037e" class="numbered-list" start="41"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-40"><strong>^</strong></a><a href="https://natalie.mu/comic/news/542454">アニメ「SYNDUALITY Noir」第2クールは来年1月から、予告映像が解禁</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-26 [2023-09-26]. （原始内容<a href="https://web.archive.org/web/20231009183257/https:/natalie.mu/comic/news/542454">存档</a>于2023-10-09） <strong>（日语）</strong>.</li></ol><ol type="1" id="4e84bbf2-36fd-4a53-96ba-cc39587b06ff" class="numbered-list" start="42"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-41"><strong>^</strong></a><a href="https://natalie.mu/comic/news/542540">「休日のわるものさん」に斉藤壮馬・中村悠一・石橋陽彩ら、PV＆新ビジュアル公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-26 [2023-09-26]. （原始内容<a href="https://web.archive.org/web/20230926103226/https:/natalie.mu/comic/news/542540">存档</a>于2023-09-26） <strong>（日语）</strong>.</li></ol><ol type="1" id="aa573c3a-6f6c-4d27-b5d9-ef7d63b2c74e" class="numbered-list" start="43"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-42"><strong>^</strong></a><a href="https://natalie.mu/comic/news/542837">「火狩りの王」第2シーズン、2024年1月に放送・配信　新キャストにM・A・O、石見舞菜香</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-28 [2023-09-28]. （原始内容<a href="https://web.archive.org/web/20231003080059/https:/natalie.mu/comic/news/542837">存档</a>于2023-10-03） <strong>（日语）</strong>.</li></ol><ol type="1" id="69bc0835-794c-4c73-b2d7-87d0091403f1" class="numbered-list" start="44"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-43"><strong>^</strong></a><a href="https://natalie.mu/comic/news/543774">「最強タンクの迷宮攻略」TVアニメ化決定！キャストに笠間淳、本渡楓、市ノ瀬加那</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-10-05 [2023-10-05]. （原始内容<a href="https://web.archive.org/web/20231014180558/https:/natalie.mu/comic/news/543774">存档</a>于2023-10-14） <strong>（日语）</strong>.</li></ol><ol type="1" id="47ec0b29-ac4c-4880-80a0-5bc26b326724" class="numbered-list" start="45"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-44"><strong>^</strong></a><a href="https://mantan-web.jp/article/20231010dog00m200068000c.html">スナックバス江：高橋李依が明美に　テレビアニメ声優発表　タツ兄、森田も</a>. MANTANWEB. 2023-10-11 [2023-10-11]. （原始内容<a href="https://web.archive.org/web/20231012054552/https:/mantan-web.jp/article/20231010dog00m200068000c.html">存档</a>于2023-10-12） <strong>（日语）</strong>.</li></ol><ol type="1" id="aa96dd75-6a50-405d-ad01-3b08619225d7" class="numbered-list" start="46"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-45"><strong>^</strong></a><a href="https://natalie.mu/comic/news/545081">「望まぬ不死の冒険者」放送は来年1月から、本PVやOP・EDテーマアーティスト公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-10-15 [2023-10-15]. （原始内容<a href="https://web.archive.org/web/20231020151948/https:/natalie.mu/comic/news/545081">存档</a>于2023-10-20） <strong>（日语）</strong>.</li></ol><ol type="1" id="d6de073e-3837-4014-869f-092d8b243fd8" class="numbered-list" start="47"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-46"><strong>^</strong></a>@cfvanguard_PR. <a href="https://twitter.com/cfvanguard_PR/status/1714258773400007052">TVアニメ カードファイト!! ヴァンガード Divinez</a> (推文). 2023-10-17 [2023-10-17] –通过<a href="https://zh.wikipedia.org/wiki/Twitter">Twitter</a> <strong>（日语）</strong>.</li></ol><ol type="1" id="8ba35833-c536-45d8-b56e-1926204222ec" class="numbered-list" start="48"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-47"><strong>^</strong></a><a href="https://natalie.mu/comic/news/546203">「愚かな天使は悪魔と踊る」PVに顔が蕩ける阿久津、頬を赤らめるリリー　OPも聴ける</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-10-23 [2023-10-23]. （原始内容<a href="https://web.archive.org/web/20231027185815/https:/natalie.mu/comic/news/546203">存档</a>于2023-10-27） <strong>（日语）</strong>.</li></ol><ol type="1" id="89463aa0-a1be-479e-8cb6-95c333401173" class="numbered-list" start="49"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-48"><strong>^</strong></a><a href="https://natalie.mu/comic/news/546192">アニメ「勇気爆発バーンブレイバーン」2024年1月放送、鈴木崚汰＆阿座上洋平ら出演</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-10-24 [2023-10-24]. （原始内容<a href="https://web.archive.org/web/20231028185708/https:/natalie.mu/comic/news/546192">存档</a>于2023-10-28） <strong>（日语）</strong>.</li></ol><ol type="1" id="10091130-a395-47ba-a15e-282c886c34d4" class="numbered-list" start="50"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-49"><strong>^</strong></a><a href="https://natalie.mu/comic/news/546844">「魔法少女にあこがれて」に古賀葵、杉浦しおりら　OP流れるメインPV第1弾公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-10-27 [2023-10-27]. （原始内容<a href="https://web.archive.org/web/20231029181239/https:/natalie.mu/comic/news/546844">存档</a>于2023-10-29） <strong>（日语）</strong>.</li></ol><ol type="1" id="af3d6e2d-10c7-436d-81e4-db994008c4c2" class="numbered-list" start="51"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-50"><strong>^</strong></a><a href="https://natalie.mu/comic/news/549337">アニメ「闇芝居 十二期」2024年1月に放送決定、“ルール”にまつわる都市伝説描く</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-16 [2023-11-16] <strong>（日语）</strong>.</li></ol><ol type="1" id="b620715f-5d44-4d4d-ab25-38cded8716a4" class="numbered-list" start="52"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-51"><strong>^</strong></a><a href="https://sasapi-anime.com/news/article_006.html">TVアニメ「佐々木とピーちゃん」2024年1月放送開始！！キービジュアル＆ＰＶを公開！！ メインスタッフも公開！！</a>. 电视动画《佐佐木与文鸟小哔》官方网站. 2023-11-16 [2023-11-16] <strong>（日语）</strong>.</li></ol><ol type="1" id="7005a9b9-fef7-4157-b931-dfd80fb7037a" class="numbered-list" start="53"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-7"><strong>^</strong></a><p id="fa651987-be91-41a7-8053-11787adbb900" class=""><a href="https://natalie.mu/comic/news/550285">「ゆびさきと恋々」キービジュアルが公開、エマ役と心役は東山奈央と畠中祐</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-23 [2023-11-23] <strong>（日语）</strong>.</p></li></ol><ol type="1" id="4503804f-df91-4f0a-9997-eb23545c77fd" class="numbered-list" start="54"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-8"><strong>^</strong></a><p id="e04001b4-afd2-4e94-b332-80185fdf3bd5" class=""><a href="https://natalie.mu/comic/news/542394">アニメ「キングダム」第5シリーズ“SIDE桓騎軍”のビジュアル公開、キャストコメントも</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-25 [2023-09-25]. （原始内容<a href="https://web.archive.org/web/20231004110011/https://natalie.mu/comic/news/542394">存档</a>于2023-10-04） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="1735d22d-ba61-49bb-a774-f4ce7f1244ef" class="numbered-list" start="55"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-9"><strong>^</strong></a><p id="b8a8f8ac-ac6a-4d03-b2ba-3900d02401c3" class=""><a href="https://natalie.mu/comic/news/549661">「もふなで」追加キャストに梅田修一朗・古谷徹ら7人、OP聴ける新PVも公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-18 [2023-11-18] <strong>（日语）</strong>.</p></li></ol><ol type="1" id="50996ae2-cf18-4e94-ae39-4c3eb9a8d994" class="numbered-list" start="56"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-10"><strong>^</strong></a><p id="6d302c16-85e7-40d0-8b84-74ebc7bcc069" class=""><a href="https://natalie.mu/comic/news/547944">「ルプなな」1月7日放送開始、7週連続で毎日異なる企画を公開するループ7Weeks始動</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-05 [2023-11-05]. （原始内容<a href="https://web.archive.org/web/20231107141545/https://natalie.mu/comic/news/547944">存档</a>于2023-11-07） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="86ab451b-6de9-45f0-9155-2f67f02affe2" class="numbered-list" start="57"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-11"><strong>^</strong></a><p id="13bd3c7a-ad18-4c2c-b52a-bf98aca3e832" class=""><a href="https://natalie.mu/comic/news/549114">アニメ「SHAMAN KING」続編のOPテーマは水樹奈々の新曲　新キャラ登場のPV公開</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-14 [2023-11-14] <strong>（日语）</strong>.</p></li></ol><ol type="1" id="bd25ab3d-6ec3-449d-be8f-68aa955b2010" class="numbered-list" start="58"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-12"><strong>^</strong></a><p id="8d5d2ec2-1c65-4d85-b226-4751102017e6" class=""><a href="https://sengoku-youko.com/news/detail.php?id=16">「戦国妖狐」世直し姉弟編の放送日時が決定！1月10日より最速放送！</a>. 电视动画《战国妖狐》官方网站. 2023-11-09 [2023-11-09] <strong>（日语）</strong>.</p></li></ol><ol type="1" id="12f56e17-30ff-4032-abf5-b67348e6fdac" class="numbered-list" start="59"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-13"><strong>^</strong></a><p id="e5b58b2a-0795-47bc-9159-e352c3b7363e" class=""><a href="https://natalie.mu/comic/news/549559">「チェリまほ」安達と黒沢が肩を並べて歩くキービジュアル、キャスト登壇上映会も発表</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-17 [2023-11-17] <strong>（日语）</strong>.</p></li></ol><ol type="1" id="7d2271f0-cbf8-4a8d-9d24-6d16485d3e2b" class="numbered-list" start="60"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-14"><strong>^</strong></a><p id="4c7f201e-afef-4f07-9916-363a5d215e12" class=""><a href="https://natalie.mu/comic/news/540990">アニメ「最弱テイマー」放送は1月12日スタート、キービジュアルもお披露目</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-14 [2023-09-14]. （原始内容<a href="https://web.archive.org/web/20230919101907/https://natalie.mu/comic/news/540990">存档</a>于2023-09-19） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="c8d0f20a-4ff3-4018-aa12-48f0841c31ca" class="numbered-list" start="61"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-15"><strong>^</strong></a><p id="ad9d516c-0195-474e-a66f-94c62b1f5b97" class=""><a href="https://natalie.mu/comic/news/550382">内海紘子×MAPPAのアニメ「ぶっちぎり?!」キャスト情報一挙解禁、メインPVも</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-24 [2023-11-24] <strong>（日语）</strong>.</p></li></ol><ol type="1" id="ef1a528e-46b4-4960-ab9c-4f0d2daf37e9" class="numbered-list" start="62"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-16"><strong>^</strong></a><p id="7f0945b5-5a11-4bc7-a134-904cd10532e1" class=""><a href="https://natalie.mu/comic/news/508438">アニメ「超普通県チバ伝説」来年1月より地上波放送、共同製作にフロンティアワークス</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-01-11 [2023-01-11]. （原始内容<a href="https://web.archive.org/web/20230114175712/https://natalie.mu/comic/news/508438">存档</a>于2023-01-14） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="1a384946-beaa-408a-8025-0634ee70dfec" class="numbered-list" start="63"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-17"><strong>^</strong></a><p id="0122f2b2-77e4-458b-a8ec-ffa03dcfddc6" class=""><a href="https://natalie.mu/comic/news/517672">ボンズ設立25周年記念アニメ「メタリックルージュ」2024年1月放送、監督は出渕裕</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-03-22 [2023-03-22]. （原始内容<a href="https://web.archive.org/web/20230331180428/https://natalie.mu/comic/news/517672">存档</a>于2023-03-31） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="616f8505-56aa-4e6b-901b-760a9cc448d0" class="numbered-list" start="64"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-18"><strong>^</strong></a><p id="8732178f-6a6f-4a88-81ec-fd87aa32fc87" class=""><a href="https://www.youtube.com/watch?v=ogikyG09W8w">【公式PV】魔都精兵のスレイブ（CV 鬼頭明里 広瀬裕也）【10巻発売記念】</a>. <a href="https://zh.wikipedia.org/wiki/YouTube">YouTube</a>. 2022-05-01 [2022-05-01]. （原始内容<a href="https://web.archive.org/web/20220505004559/https://www.youtube.com/watch?v=ogikyG09W8w">存档</a>于2022-05-05）.</p></li></ol><ol type="1" id="c77ff5ce-8989-4559-9811-9cae12d61911" class="numbered-list" start="65"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-19"><strong>^</strong></a><p id="ea8939a6-5348-4644-99b0-3cb943b75fdd" class=""><a href="https://natalie.mu/comic/news/518099">「魔都精兵のスレイブ」来年1月放送、七番組とスレイブ化した優希のビジュアル公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-03-25 [2023-03-25]. （原始内容<a href="https://web.archive.org/web/20230401063234/https://natalie.mu/comic/news/518099">存档</a>于2023-04-01） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="f30eaae8-d9e6-464b-94da-8f42a19a585b" class="numbered-list" start="66"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-20"><strong>^</strong></a><p id="9c2314d6-bfa1-4559-93e9-315b3257b16f" class=""><a href="https://mantan-web.jp/article/20230523dog00m200026000c.html">ぽんのみち：講談社のオリジナルテレビアニメ　「五等分の花嫁」春場ねぎがキャラ原案　前田佳織里、佐伯伊織、若山詩音、近藤唯出演</a>. MANTANWEB. 2023-05-23 [2023-05-23]. （原始内容<a href="https://web.archive.org/web/20230526054859/https://mantan-web.jp/article/20230523dog00m200026000c.html">存档</a>于2023-05-26） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="1e5ecbf1-126a-4b3d-bcee-4432be9b8b50" class="numbered-list" start="67"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-21"><strong>^</strong></a><p id="62d585c2-5b35-409f-be98-2b3405492926" class=""><a href="https://natalie.mu/comic/news/525937">「ダンジョン飯」来年1月放送開始　ライオス一行のキャストに熊谷健太郎、千本木彩花ら</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-05-25 [2023-05-25] <strong>（日语）</strong>.</p></li></ol><ol type="1" id="d53e6091-ed3d-45ab-b918-497099b0349c" class="numbered-list" start="68"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-22"><strong>^</strong></a><p id="b194e841-6237-4d4e-9d3c-2268a3c4bc5a" class=""><a href="https://natalie.mu/comic/news/529231">アニメ「僕の心のヤバイやつ」第2期決定！来年1月から放送、桜井のりおがお祝い</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-06-18 [2023-06-18]. （原始内容<a href="https://web.archive.org/web/20230705040540/https://natalie.mu/comic/news/529231">存档</a>于2023-07-05） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="81d57733-0d49-4ede-9e06-011422278f59" class="numbered-list" start="69"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-23"><strong>^</strong></a><p id="bd5b7600-0ea6-4393-98db-5525e3eb5b5c" class=""><a href="https://natalie.mu/comic/news/530304">「弱キャラ友崎くん」第2期の放送開始は2024年1月、ティザービジュアル第2弾公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-06-26 [2023-06-26]. （原始内容<a href="https://web.archive.org/web/20230626091725/https://natalie.mu/comic/news/530304">存档</a>于2023-06-26） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="f571d96b-d5c6-4391-b38d-4e181b606ca6" class="numbered-list" start="70"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-24"><strong>^</strong></a><p id="80a71e05-2daf-48cc-989d-b6a025324c83" class=""><a href="https://natalie.mu/comic/news/530392">「姫様“拷問”の時間です」アニメ化！白石晴香が拷問耐える姫騎士に、放送は1月</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-06-27 [2023-06-27]. （原始内容<a href="https://web.archive.org/web/20230627074655/https://natalie.mu/comic/news/530392">存档</a>于2023-06-27） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="ea658bb3-1bbe-46c8-ac8a-0c4999bef491" class="numbered-list" start="71"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-25"><strong>^</strong></a><p id="92219dae-cc05-47e4-b7c2-c51d6aaca67f" class=""><a href="https://natalie.mu/comic/news/530857">アニメ「外科医エリーゼ」2024年1月放送、キャストに石川由依・阿座上洋平・細谷佳正</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-06-29 [2023-06-29]. （原始内容<a href="https://web.archive.org/web/20230630065121/https://natalie.mu/comic/news/530857">存档</a>于2023-06-30） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="0b7e704e-f3b1-4c9a-a54a-75990c77a0ff" class="numbered-list" start="72"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-26"><strong>^</strong></a><p id="e804c80b-ff6f-49be-9711-17966ffd5349" class=""><a href="https://natalie.mu/comic/news/531026">「マッシュル-MASHLE-」第2期の制作決定！放送は来年1月から、特報も公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-07-01 [2023-07-01] <strong>（日语）</strong>.</p></li></ol><ol type="1" id="979b1e00-1354-4ba8-9baa-cb5fead05492" class="numbered-list" start="73"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-27"><strong>^</strong></a><p id="8e2f71b0-13c2-48be-9253-2b106cd2cc65" class=""><a href="https://natalie.mu/comic/news/531399">「道産子ギャル」キービジュアルと第1弾PV公開、追加キャストに花守ゆみりと上田麗奈</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-07-04 [2023-07-04] <strong>（日语）</strong>.</p></li></ol><ol type="1" id="a2bafd22-582e-459b-b497-1305c8afb0be" class="numbered-list" start="74"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-28"><strong>^</strong></a><p id="529594cf-93b9-4ac9-9791-ab13500fadf2" class=""><a href="https://natalie.mu/comic/news/532676">「月が導く異世界道中」第2期は来年1月より2クール、アニメ制作はJ.C.STAFFが担当</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-07-13 [2023-07-13]. （原始内容<a href="https://web.archive.org/web/20230713160004/https://natalie.mu/comic/news/532676">存档</a>于2023-07-13） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="fee3055d-7f59-4e2b-8712-90a0c0cebaed" class="numbered-list" start="75"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-29"><strong>^</strong></a><p id="247013fc-7625-43e5-a74d-180ae185fcac" class=""><a href="https://natalie.mu/comic/news/532808">アニメ「魔女と野獣」は2024年1月放送開始　ギド役は大地葉、アシャフ役は森川智之</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-07-13 [2023-07-13] <strong>（日语）</strong>.</p></li></ol><ol type="1" id="ffd7c17c-9b07-4ae6-8986-8ce5d2c4122f" class="numbered-list" start="76"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-30"><strong>^</strong></a><p id="af429641-4419-41db-8a9e-885a5aab6248" class=""><a href="https://mantan-web.jp/article/20230716dog00m200048000c.html">異修羅：テレビアニメが2024年1月スタート　山寺宏一が音斬りシャルクに　パッショーネ制作</a>. MANTANWEB. 2023-07-16 [2023-07-16]. （原始内容<a href="https://web.archive.org/web/20230717090522/https://mantan-web.jp/article/20230716dog00m200048000c.html">存档</a>于2023-07-17） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="3933af8e-5f62-49e2-821c-6220422c8768" class="numbered-list" start="77"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-31"><strong>^</strong></a><p id="ed0d8a0f-6220-45e7-a609-967c19a60a55" class=""><a href="https://natalie.mu/comic/news/535232">アニメ「HIGH CARD」season2は来年1月放送開始、PV第1弾公開　舞台化も決定</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-08-01 [2023-08-01]. （原始内容<a href="https://web.archive.org/web/20230802144401/https://natalie.mu/comic/news/535232">存档</a>于2023-08-02） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="8ec698d0-2703-4fab-82df-a780048f60bf" class="numbered-list" start="78"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-32"><strong>^</strong></a><p id="6c5a25fa-7d21-4b43-814e-2f1e629ce1d0" class=""><a href="https://natalie.mu/comic/news/537911">TVアニメ「うる星やつら」第2期は2024年1月から放送、キービジュに新キャラの姿も</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-08-23 [2023-08-23]. （原始内容<a href="https://web.archive.org/web/20230825184643/https://natalie.mu/comic/news/537911">存档</a>于2023-08-25） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="be9c5885-cd6d-4f8a-9877-aed0272b6711" class="numbered-list" start="79"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-33"><strong>^</strong></a><p id="fff4935f-252a-4907-a92c-f7c7e3b237a7" class=""><a href="https://natalie.mu/comic/news/538546">「治癒魔法の間違った使い方」追加キャスト＆キャラボイス入りのPV第1弾解禁</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-08-27 [2023-08-27] <strong>（日语）</strong>.</p></li></ol><ol type="1" id="4dd2988e-98f6-4c88-a49b-a215bbc5fae2" class="numbered-list" start="80"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-34"><strong>^</strong></a><p id="965eecb1-a7a8-481c-bfde-f1b92a7b3f53" class=""><a href="https://natalie.mu/comic/news/540331">「悪役令嬢レベル99」ユミエラ役はファイルーズあい、PV・キービジュアル公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-09 [2023-09-09]. （原始内容<a href="https://web.archive.org/web/20230913081314/https://natalie.mu/comic/news/540331">存档</a>于2023-09-13） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="4b84d248-5781-46b7-ad98-cf6e130efeb0" class="numbered-list" start="81"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-35"><strong>^</strong></a><p id="3ae36949-ad48-460f-a5b8-fda96a0015df" class=""><a href="https://natalie.mu/comic/news/540428">アニメ「青の祓魔師」新シリーズ「島根啓明結社篇」来年1月放送、キャストは全員続投</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-10 [2023-09-10]. （原始内容<a href="https://web.archive.org/web/20230915143438/https://natalie.mu/comic/news/540428">存档</a>于2023-09-15） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="3f8efee7-a462-46f6-b15b-473b0095cdbb" class="numbered-list" start="82"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-36"><strong>^</strong></a><p id="a759987e-8752-4fb5-a409-02cf01a8d656" class=""><a href="https://natalie.mu/comic/news/540453">TVアニメ「俺だけレベルアップな件」来年1月放送開始、水篠旬の姿を捉えたPVも</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-10 [2023-09-10]. （原始内容<a href="https://web.archive.org/web/20230917194910/https://natalie.mu/comic/news/540453">存档</a>于2023-09-17） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="cb0b58d9-6577-43ef-a3b0-303392be3f4e" class="numbered-list" start="83"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-37"><strong>^</strong></a><p id="7f52e32e-f7d7-477d-8ae9-41060e43f46d" class=""><a href="https://natalie.mu/comic/news/540900">「貼りまわれ！こいぬ」2024年1月にアニメ化！うかうかも監修しながら大いに楽しむ</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-13 [2023-09-13]. （原始内容<a href="https://web.archive.org/web/20231014180601/https://natalie.mu/comic/news/540900">存档</a>于2023-10-14） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="96c44b34-5160-4eb5-aa31-2c9661686cab" class="numbered-list" start="84"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-38"><strong>^</strong></a><p id="20eb470d-51b9-483c-a7a5-08b1937eba1b" class=""><a href="https://natalie.mu/comic/news/541654">主人公は超常現象雑誌の編集部員、アニメ「月刊モー想科学」キャストなど一挙解禁</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-19 [2023-09-19]. （原始内容<a href="https://web.archive.org/web/20231004110010/https://natalie.mu/comic/news/541654">存档</a>于2023-10-04） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="08f07654-7fff-416a-bdb7-521d3faaafc2" class="numbered-list" start="85"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-39"><strong>^</strong></a><p id="5e5e0b27-b2aa-4077-b1a6-e9572675da88" class=""><a href="https://natalie.mu/comic/news/542286">アニメ「真の仲間」第2期は2024年1月から　PV第1弾とキャラビジュ、スタッフ情報公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-24 [2023-09-24]. （原始内容<a href="https://web.archive.org/web/20231012051639/https://natalie.mu/comic/news/542286">存档</a>于2023-10-12） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="5f1a58f2-d865-414d-b76b-2debbb5c5caa" class="numbered-list" start="86"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-40"><strong>^</strong></a><p id="8b348f72-0946-4bf1-8ce8-6bf63aa2e67b" class=""><a href="https://natalie.mu/comic/news/542454">アニメ「SYNDUALITY Noir」第2クールは来年1月から、予告映像が解禁</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-26 [2023-09-26]. （原始内容<a href="https://web.archive.org/web/20231009183257/https://natalie.mu/comic/news/542454">存档</a>于2023-10-09） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="7bf6a03e-5da5-4094-a1ff-f41807b96335" class="numbered-list" start="87"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-41"><strong>^</strong></a><p id="3bdc5edf-cb3e-4d5e-afaf-9108f8d70f5a" class=""><a href="https://natalie.mu/comic/news/542540">「休日のわるものさん」に斉藤壮馬・中村悠一・石橋陽彩ら、PV＆新ビジュアル公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-26 [2023-09-26]. （原始内容<a href="https://web.archive.org/web/20230926103226/https://natalie.mu/comic/news/542540">存档</a>于2023-09-26） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="3f33b39f-8739-471d-840b-7da3eefcfe26" class="numbered-list" start="88"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-42"><strong>^</strong></a><p id="c972f42a-6d8a-46d2-b457-9cf920e658ed" class=""><a href="https://natalie.mu/comic/news/542837">「火狩りの王」第2シーズン、2024年1月に放送・配信　新キャストにM・A・O、石見舞菜香</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-28 [2023-09-28]. （原始内容<a href="https://web.archive.org/web/20231003080059/https://natalie.mu/comic/news/542837">存档</a>于2023-10-03） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="070a5fe5-d90f-4ca4-91d6-479b399d41c2" class="numbered-list" start="89"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-43"><strong>^</strong></a><p id="6afe525b-ef83-4dcb-9c1b-cdf8e1231d3c" class=""><a href="https://natalie.mu/comic/news/543774">「最強タンクの迷宮攻略」TVアニメ化決定！キャストに笠間淳、本渡楓、市ノ瀬加那</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-10-05 [2023-10-05]. （原始内容<a href="https://web.archive.org/web/20231014180558/https://natalie.mu/comic/news/543774">存档</a>于2023-10-14） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="e38a4811-d7dd-48a0-a7d3-a620291f48eb" class="numbered-list" start="90"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-44"><strong>^</strong></a><p id="44c0c1ab-bd33-4a17-a11f-16b2e5fd3f62" class=""><a href="https://mantan-web.jp/article/20231010dog00m200068000c.html">スナックバス江：高橋李依が明美に　テレビアニメ声優発表　タツ兄、森田も</a>. MANTANWEB. 2023-10-11 [2023-10-11]. （原始内容<a href="https://web.archive.org/web/20231012054552/https://mantan-web.jp/article/20231010dog00m200068000c.html">存档</a>于2023-10-12） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="a5c60cf3-03f6-4393-9ecf-4016af119cd8" class="numbered-list" start="91"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-45"><strong>^</strong></a><p id="9b8d407f-dbba-415f-aaf3-bc01770b56cd" class=""><a href="https://natalie.mu/comic/news/545081">「望まぬ不死の冒険者」放送は来年1月から、本PVやOP・EDテーマアーティスト公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-10-15 [2023-10-15]. （原始内容<a href="https://web.archive.org/web/20231020151948/https://natalie.mu/comic/news/545081">存档</a>于2023-10-20） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="f7dc9739-499e-43b9-92f5-aa078a3458b1" class="numbered-list" start="92"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-46"><strong>^</strong></a><p id="b8713cee-897d-45d8-add7-c243a5b3fc0e" class="">@cfvanguard_PR. <a href="https://twitter.com/cfvanguard_PR/status/1714258773400007052">TVアニメ カードファイト!! ヴァンガード Divinez</a> (推文). 2023-10-17 [2023-10-17] –通过<a href="https://zh.wikipedia.org/wiki/Twitter">Twitter</a> <strong>（日语）</strong>.</p></li></ol><ol type="1" id="75f7800c-20d9-44a9-ac06-8a01b5bb7ff0" class="numbered-list" start="93"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-47"><strong>^</strong></a><p id="65764451-7b36-4662-bc04-46c131baf23c" class=""><a href="https://natalie.mu/comic/news/546203">「愚かな天使は悪魔と踊る」PVに顔が蕩ける阿久津、頬を赤らめるリリー　OPも聴ける</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-10-23 [2023-10-23]. （原始内容<a href="https://web.archive.org/web/20231027185815/https://natalie.mu/comic/news/546203">存档</a>于2023-10-27） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="bdfc0b54-6896-4e72-ad1e-b95db6ca16af" class="numbered-list" start="94"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-48"><strong>^</strong></a><p id="ce043f0a-623f-4f6f-bce4-0b6766a334af" class=""><a href="https://natalie.mu/comic/news/546192">アニメ「勇気爆発バーンブレイバーン」2024年1月放送、鈴木崚汰＆阿座上洋平ら出演</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-10-24 [2023-10-24]. （原始内容<a href="https://web.archive.org/web/20231028185708/https://natalie.mu/comic/news/546192">存档</a>于2023-10-28） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="e9bc1b76-450d-4288-8948-8dfeec3c443d" class="numbered-list" start="95"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-49"><strong>^</strong></a><p id="11a9c565-b288-45a9-a2b2-3143f3cb7d6c" class=""><a href="https://natalie.mu/comic/news/546844">「魔法少女にあこがれて」に古賀葵、杉浦しおりら　OP流れるメインPV第1弾公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-10-27 [2023-10-27]. （原始内容<a href="https://web.archive.org/web/20231029181239/https://natalie.mu/comic/news/546844">存档</a>于2023-10-29） <strong>（日语）</strong>.</p></li></ol><ol type="1" id="dca910d0-2748-4fa3-9040-632834f8505f" class="numbered-list" start="96"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-50"><strong>^</strong></a><p id="bbbb1b67-1892-4423-ad67-1446062d68df" class=""><a href="https://natalie.mu/comic/news/549337">アニメ「闇芝居 十二期」2024年1月に放送決定、“ルール”にまつわる都市伝説描く</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-16 [2023-11-16] <strong>（日语）</strong>.</p></li></ol><ol type="1" id="f0388036-f7a8-40de-a10c-b1e2e5c20661" class="numbered-list" start="97"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-51"><strong>^</strong></a><p id="5c57a311-3f55-452b-91b7-587d22c3d2d7" class=""><a href="https://sasapi-anime.com/news/article_006.html">TVアニメ「佐々木とピーちゃん」2024年1月放送開始！！キービジュアル＆ＰＶを公開！！ メインスタッフも公開！！</a>. 电视动画《佐佐木与文鸟小哔》官方网站. 2023-11-16 [2023-11-16] <strong>（日语）</strong>.</p></li></ol><ol type="1" id="714e5154-5873-4475-9266-e30d9d7089ba" class="numbered-list" start="98"><li><a href="https://natalie.mu/comic/news/549532">「BASTARD!!」第2期が2024年1月よりテレビ放送決定、初回は90分SP</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-17 [2023-11-17] <strong>（日语）</strong>.</li></ol><ol type="1" id="1938ed5e-66cb-46aa-90c2-1c6cf6769bc4" class="numbered-list" start="99"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-3"><strong>^</strong></a><a href="https://natalie.mu/comic/news/550474">アニメ「よう実」3期、放送開始日が2024年1月3日に決定</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-25 [2023-11-25] <strong>（日语）</strong>.</li></ol><ol type="1" id="bdf5bed6-4fff-4009-9ad7-aa0ea13222ab" class="numbered-list" start="100"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-4"><strong>^</strong></a><a href="https://natalie.mu/comic/news/549393">「即死チート」キャラ大集合のキービジュ、石井マーク・野上翔・関根明良の出演が決定</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-16 [2023-11-16] <strong>（日语）</strong>.</li></ol><ol type="1" id="338f82cc-7dcc-4e05-8fdd-159fd4c63d74" class="numbered-list" start="101"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-5"><strong>^</strong></a><a href="https://natalie.mu/comic/news/549626">「百千さん家のあやかし王子」火車役は八代拓、那智篁役は羽多野渉　本PVも公開に</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-18 [2023-11-18] <strong>（日语）</strong>.</li></ol><ol type="1" id="5f7cba0d-35d1-43f8-bd2f-f47709e76632" class="numbered-list" start="102"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-6"><strong>^</strong></a><a href="https://natalie.mu/comic/news/549649">「結婚指輪物語」1月6日放送開始、本ビジュアル＆本PV公開　坂田将吾と千葉繁の出演も</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-17 [2023-11-17] <strong>（日语）</strong>.</li></ol><ol type="1" id="9a246e42-563e-4c48-ae65-e0923d44e617" class="numbered-list" start="103"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-7"><strong>^</strong></a><a href="https://natalie.mu/comic/news/550285">「ゆびさきと恋々」キービジュアルが公開、エマ役と心役は東山奈央と畠中祐</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-23 [2023-11-23] <strong>（日语）</strong>.</li></ol><ol type="1" id="3489ce81-3685-4870-a2d3-2c969072b7bc" class="numbered-list" start="104"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-8"><strong>^</strong></a><a href="https://natalie.mu/comic/news/542394">アニメ「キングダム」第5シリーズ“SIDE桓騎軍”のビジュアル公開、キャストコメントも</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-25 [2023-09-25]. （原始内容<a href="https://web.archive.org/web/20231004110011/https:/natalie.mu/comic/news/542394">存档</a>于2023-10-04） <strong>（日语）</strong>.</li></ol><ol type="1" id="9a0ae593-e862-4d61-a7dd-b388b8162227" class="numbered-list" start="105"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-9"><strong>^</strong></a><a href="https://natalie.mu/comic/news/549661">「もふなで」追加キャストに梅田修一朗・古谷徹ら7人、OP聴ける新PVも公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-18 [2023-11-18] <strong>（日语）</strong>.</li></ol><ol type="1" id="980e689f-c5d3-463b-b5d8-05b3df147945" class="numbered-list" start="106"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-10"><strong>^</strong></a><a href="https://natalie.mu/comic/news/547944">「ルプなな」1月7日放送開始、7週連続で毎日異なる企画を公開するループ7Weeks始動</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-05 [2023-11-05]. （原始内容<a href="https://web.archive.org/web/20231107141545/https:/natalie.mu/comic/news/547944">存档</a>于2023-11-07） <strong>（日语）</strong>.</li></ol><ol type="1" id="736d0e3e-93d7-48e4-970c-3dd9ff52746f" class="numbered-list" start="107"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-11"><strong>^</strong></a><a href="https://natalie.mu/comic/news/549114">アニメ「SHAMAN KING」続編のOPテーマは水樹奈々の新曲　新キャラ登場のPV公開</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-14 [2023-11-14] <strong>（日语）</strong>.</li></ol><ol type="1" id="5e95b663-6ef8-4e1a-a41c-38728aea1505" class="numbered-list" start="108"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-12"><strong>^</strong></a><a href="https://sengoku-youko.com/news/detail.php?id=16">「戦国妖狐」世直し姉弟編の放送日時が決定！1月10日より最速放送！</a>. 电视动画《战国妖狐》官方网站. 2023-11-09 [2023-11-09] <strong>（日语）</strong>.</li></ol><ol type="1" id="8b744127-665b-4db7-882b-5dce8046c6bf" class="numbered-list" start="109"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-13"><strong>^</strong></a><a href="https://natalie.mu/comic/news/549559">「チェリまほ」安達と黒沢が肩を並べて歩くキービジュアル、キャスト登壇上映会も発表</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-17 [2023-11-17] <strong>（日语）</strong>.</li></ol><ol type="1" id="982e4597-c2fa-49bc-b77a-ad6761fc948d" class="numbered-list" start="110"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-14"><strong>^</strong></a><a href="https://natalie.mu/comic/news/540990">アニメ「最弱テイマー」放送は1月12日スタート、キービジュアルもお披露目</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-14 [2023-09-14]. （原始内容<a href="https://web.archive.org/web/20230919101907/https:/natalie.mu/comic/news/540990">存档</a>于2023-09-19） <strong>（日语）</strong>.</li></ol><ol type="1" id="09728d09-3127-40c6-999c-7b799a1a2e6d" class="numbered-list" start="111"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-15"><strong>^</strong></a><a href="https://natalie.mu/comic/news/550382">内海紘子×MAPPAのアニメ「ぶっちぎり?!」キャスト情報一挙解禁、メインPVも</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-11-24 [2023-11-24] <strong>（日语）</strong>.</li></ol><ol type="1" id="2f477cdf-2137-4f95-b720-58ee64c07d7a" class="numbered-list" start="112"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-16"><strong>^</strong></a><a href="https://natalie.mu/comic/news/508438">アニメ「超普通県チバ伝説」来年1月より地上波放送、共同製作にフロンティアワークス</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-01-11 [2023-01-11]. （原始内容<a href="https://web.archive.org/web/20230114175712/https:/natalie.mu/comic/news/508438">存档</a>于2023-01-14） <strong>（日语）</strong>.</li></ol><ol type="1" id="4c7f3db8-4468-490d-8dd5-1c23ab7008b3" class="numbered-list" start="113"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-17"><strong>^</strong></a><a href="https://natalie.mu/comic/news/517672">ボンズ設立25周年記念アニメ「メタリックルージュ」2024年1月放送、監督は出渕裕</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-03-22 [2023-03-22]. （原始内容<a href="https://web.archive.org/web/20230331180428/https:/natalie.mu/comic/news/517672">存档</a>于2023-03-31） <strong>（日语）</strong>.</li></ol><ol type="1" id="71a73ab1-3509-4891-898a-13e4467e4911" class="numbered-list" start="114"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-18"><strong>^</strong></a><a href="https://www.youtube.com/watch?v=ogikyG09W8w">【公式PV】魔都精兵のスレイブ（CV 鬼頭明里 広瀬裕也）【10巻発売記念】</a>. <a href="https://zh.wikipedia.org/wiki/YouTube">YouTube</a>. 2022-05-01 [2022-05-01]. （原始内容<a href="https://web.archive.org/web/20220505004559/https:/www.youtube.com/watch?v=ogikyG09W8w">存档</a>于2022-05-05）.</li></ol><ol type="1" id="b0c2e5d1-e00b-44c7-bdfa-34fa15591984" class="numbered-list" start="115"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-19"><strong>^</strong></a><a href="https://natalie.mu/comic/news/518099">「魔都精兵のスレイブ」来年1月放送、七番組とスレイブ化した優希のビジュアル公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-03-25 [2023-03-25]. （原始内容<a href="https://web.archive.org/web/20230401063234/https:/natalie.mu/comic/news/518099">存档</a>于2023-04-01） <strong>（日语）</strong>.</li></ol><ol type="1" id="878ddb42-d22d-4d03-a331-314b72d3243e" class="numbered-list" start="116"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-20"><strong>^</strong></a><a href="https://mantan-web.jp/article/20230523dog00m200026000c.html">ぽんのみち：講談社のオリジナルテレビアニメ　「五等分の花嫁」春場ねぎがキャラ原案　前田佳織里、佐伯伊織、若山詩音、近藤唯出演</a>. MANTANWEB. 2023-05-23 [2023-05-23]. （原始内容<a href="https://web.archive.org/web/20230526054859/https:/mantan-web.jp/article/20230523dog00m200026000c.html">存档</a>于2023-05-26） <strong>（日语）</strong>.</li></ol><ol type="1" id="a8f03a95-05db-480b-9a78-bdee7d15fc25" class="numbered-list" start="117"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-21"><strong>^</strong></a><a href="https://natalie.mu/comic/news/525937">「ダンジョン飯」来年1月放送開始　ライオス一行のキャストに熊谷健太郎、千本木彩花ら</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-05-25 [2023-05-25] <strong>（日语）</strong>.</li></ol><ol type="1" id="acb8c172-5f8e-4890-aef4-7b1c7d72db60" class="numbered-list" start="118"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-22"><strong>^</strong></a><a href="https://natalie.mu/comic/news/529231">アニメ「僕の心のヤバイやつ」第2期決定！来年1月から放送、桜井のりおがお祝い</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-06-18 [2023-06-18]. （原始内容<a href="https://web.archive.org/web/20230705040540/https:/natalie.mu/comic/news/529231">存档</a>于2023-07-05） <strong>（日语）</strong>.</li></ol><ol type="1" id="1ef4cb2a-d05a-44d5-94e9-b7aef566bb74" class="numbered-list" start="119"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-23"><strong>^</strong></a><a href="https://natalie.mu/comic/news/530304">「弱キャラ友崎くん」第2期の放送開始は2024年1月、ティザービジュアル第2弾公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-06-26 [2023-06-26]. （原始内容<a href="https://web.archive.org/web/20230626091725/https:/natalie.mu/comic/news/530304">存档</a>于2023-06-26） <strong>（日语）</strong>.</li></ol><ol type="1" id="3717e562-a6d9-40f6-90ad-d0e5c3a8abf7" class="numbered-list" start="120"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-24"><strong>^</strong></a><a href="https://natalie.mu/comic/news/530392">「姫様“拷問”の時間です」アニメ化！白石晴香が拷問耐える姫騎士に、放送は1月</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-06-27 [2023-06-27]. （原始内容<a href="https://web.archive.org/web/20230627074655/https:/natalie.mu/comic/news/530392">存档</a>于2023-06-27） <strong>（日语）</strong>.</li></ol><ol type="1" id="571bd206-1cc3-4d2a-8213-8abe44697f14" class="numbered-list" start="121"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-25"><strong>^</strong></a><a href="https://natalie.mu/comic/news/530857">アニメ「外科医エリーゼ」2024年1月放送、キャストに石川由依・阿座上洋平・細谷佳正</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-06-29 [2023-06-29]. （原始内容<a href="https://web.archive.org/web/20230630065121/https:/natalie.mu/comic/news/530857">存档</a>于2023-06-30） <strong>（日语）</strong>.</li></ol><ol type="1" id="004ceef1-9d85-443d-baab-93e7efffcb6f" class="numbered-list" start="122"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-26"><strong>^</strong></a><a href="https://natalie.mu/comic/news/531026">「マッシュル-MASHLE-」第2期の制作決定！放送は来年1月から、特報も公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-07-01 [2023-07-01] <strong>（日语）</strong>.</li></ol><ol type="1" id="4fb6e62a-fc29-4345-86d5-a0ff071ed61b" class="numbered-list" start="123"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-27"><strong>^</strong></a><a href="https://natalie.mu/comic/news/531399">「道産子ギャル」キービジュアルと第1弾PV公開、追加キャストに花守ゆみりと上田麗奈</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-07-04 [2023-07-04] <strong>（日语）</strong>.</li></ol><ol type="1" id="2a1b6ad1-067e-4197-bff5-6f804c3c3a00" class="numbered-list" start="124"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-28"><strong>^</strong></a><a href="https://natalie.mu/comic/news/532676">「月が導く異世界道中」第2期は来年1月より2クール、アニメ制作はC.STAFFが担当</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-07-13 [2023-07-13]. （原始内容<a href="https://web.archive.org/web/20230713160004/https:/natalie.mu/comic/news/532676">存档</a>于2023-07-13） <strong>（日语）</strong>.</li></ol><ol type="1" id="ba3cf56d-8b3e-4e26-86b0-61a1611d989e" class="numbered-list" start="125"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-29"><strong>^</strong></a><a href="https://natalie.mu/comic/news/532808">アニメ「魔女と野獣」は2024年1月放送開始　ギド役は大地葉、アシャフ役は森川智之</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-07-13 [2023-07-13] <strong>（日语）</strong>.</li></ol><ol type="1" id="6502da9c-63b1-4924-9220-902d8bd901d2" class="numbered-list" start="126"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-30"><strong>^</strong></a><a href="https://mantan-web.jp/article/20230716dog00m200048000c.html">異修羅：テレビアニメが2024年1月スタート　山寺宏一が音斬りシャルクに　パッショーネ制作</a>. MANTANWEB. 2023-07-16 [2023-07-16]. （原始内容<a href="https://web.archive.org/web/20230717090522/https:/mantan-web.jp/article/20230716dog00m200048000c.html">存档</a>于2023-07-17） <strong>（日语）</strong>.</li></ol><ol type="1" id="4c742556-6de8-467e-89e2-395165386a7a" class="numbered-list" start="127"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-31"><strong>^</strong></a><a href="https://natalie.mu/comic/news/535232">アニメ「HIGH CARD」season2は来年1月放送開始、PV第1弾公開　舞台化も決定</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-08-01 [2023-08-01]. （原始内容<a href="https://web.archive.org/web/20230802144401/https:/natalie.mu/comic/news/535232">存档</a>于2023-08-02） <strong>（日语）</strong>.</li></ol><ol type="1" id="d3645907-6f91-4f85-beb4-bdc56c94cf4f" class="numbered-list" start="128"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-32"><strong>^</strong></a><a href="https://natalie.mu/comic/news/537911">TVアニメ「うる星やつら」第2期は2024年1月から放送、キービジュに新キャラの姿も</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-08-23 [2023-08-23]. （原始内容<a href="https://web.archive.org/web/20230825184643/https:/natalie.mu/comic/news/537911">存档</a>于2023-08-25） <strong>（日语）</strong>.</li></ol><ol type="1" id="02855bf8-908f-494e-b84b-c3150aa70c7f" class="numbered-list" start="129"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-33"><strong>^</strong></a><a href="https://natalie.mu/comic/news/538546">「治癒魔法の間違った使い方」追加キャスト＆キャラボイス入りのPV第1弾解禁</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-08-27 [2023-08-27] <strong>（日语）</strong>.</li></ol><ol type="1" id="0e5286b6-7309-4b89-975f-a0794402e9ed" class="numbered-list" start="130"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-34"><strong>^</strong></a><a href="https://natalie.mu/comic/news/540331">「悪役令嬢レベル99」ユミエラ役はファイルーズあい、PV・キービジュアル公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-09 [2023-09-09]. （原始内容<a href="https://web.archive.org/web/20230913081314/https:/natalie.mu/comic/news/540331">存档</a>于2023-09-13） <strong>（日语）</strong>.</li></ol><ol type="1" id="a7db3aae-5689-4e55-bff9-f85217072a2c" class="numbered-list" start="131"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-35"><strong>^</strong></a><a href="https://natalie.mu/comic/news/540428">アニメ「青の祓魔師」新シリーズ「島根啓明結社篇」来年1月放送、キャストは全員続投</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-10 [2023-09-10]. （原始内容<a href="https://web.archive.org/web/20230915143438/https:/natalie.mu/comic/news/540428">存档</a>于2023-09-15） <strong>（日语）</strong>.</li></ol><ol type="1" id="9e66f1e5-d7a4-4c47-b670-f5d6386cc74b" class="numbered-list" start="132"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-36"><strong>^</strong></a><a href="https://natalie.mu/comic/news/540453">TVアニメ「俺だけレベルアップな件」来年1月放送開始、水篠旬の姿を捉えたPVも</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-10 [2023-09-10]. （原始内容<a href="https://web.archive.org/web/20230917194910/https:/natalie.mu/comic/news/540453">存档</a>于2023-09-17） <strong>（日语）</strong>.</li></ol><ol type="1" id="f35d60f8-2fca-4c08-9949-346312588da6" class="numbered-list" start="133"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-37"><strong>^</strong></a><a href="https://natalie.mu/comic/news/540900">「貼りまわれ！こいぬ」2024年1月にアニメ化！うかうかも監修しながら大いに楽しむ</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-13 [2023-09-13]. （原始内容<a href="https://web.archive.org/web/20231014180601/https:/natalie.mu/comic/news/540900">存档</a>于2023-10-14） <strong>（日语）</strong>.</li></ol><ol type="1" id="458b9b9e-c299-45ba-a1e0-1c51f1d9ec2f" class="numbered-list" start="134"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-38"><strong>^</strong></a><a href="https://natalie.mu/comic/news/541654">主人公は超常現象雑誌の編集部員、アニメ「月刊モー想科学」キャストなど一挙解禁</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-19 [2023-09-19]. （原始内容<a href="https://web.archive.org/web/20231004110010/https:/natalie.mu/comic/news/541654">存档</a>于2023-10-04） <strong>（日语）</strong>.</li></ol><ol type="1" id="788444e5-2640-4253-85c5-9b1643692a67" class="numbered-list" start="135"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-39"><strong>^</strong></a><a href="https://natalie.mu/comic/news/542286">アニメ「真の仲間」第2期は2024年1月から　PV第1弾とキャラビジュ、スタッフ情報公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-24 [2023-09-24]. （原始内容<a href="https://web.archive.org/web/20231012051639/https:/natalie.mu/comic/news/542286">存档</a>于2023-10-12） <strong>（日语）</strong>.</li></ol><ol type="1" id="7bb43173-5420-4da5-a5b8-8cbf53067a6a" class="numbered-list" start="136"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-40"><strong>^</strong></a><a href="https://natalie.mu/comic/news/542454">アニメ「SYNDUALITY Noir」第2クールは来年1月から、予告映像が解禁</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-26 [2023-09-26]. （原始内容<a href="https://web.archive.org/web/20231009183257/https:/natalie.mu/comic/news/542454">存档</a>于2023-10-09） <strong>（日语）</strong>.</li></ol><ol type="1" id="ccb2b597-fd12-4b5f-8ccb-be62b98ef4a1" class="numbered-list" start="137"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-41"><strong>^</strong></a><a href="https://natalie.mu/comic/news/542540">「休日のわるものさん」に斉藤壮馬・中村悠一・石橋陽彩ら、PV＆新ビジュアル公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-26 [2023-09-26]. （原始内容<a href="https://web.archive.org/web/20230926103226/https:/natalie.mu/comic/news/542540">存档</a>于2023-09-26） <strong>（日语）</strong>.</li></ol><ol type="1" id="ee16d0a5-f705-4d86-b99e-345a01608e21" class="numbered-list" start="138"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-42"><strong>^</strong></a><a href="https://natalie.mu/comic/news/542837">「火狩りの王」第2シーズン、2024年1月に放送・配信　新キャストにM・A・O、石見舞菜香</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-09-28 [2023-09-28]. （原始内容<a href="https://web.archive.org/web/20231003080059/https:/natalie.mu/comic/news/542837">存档</a>于2023-10-03） <strong>（日语）</strong>.</li></ol><ol type="1" id="49e66de0-a25f-4fb8-8c87-a12a4f80f965" class="numbered-list" start="139"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-43"><strong>^</strong></a><a href="https://natalie.mu/comic/news/543774">「最強タンクの迷宮攻略」TVアニメ化決定！キャストに笠間淳、本渡楓、市ノ瀬加那</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-10-05 [2023-10-05]. （原始内容<a href="https://web.archive.org/web/20231014180558/https:/natalie.mu/comic/news/543774">存档</a>于2023-10-14） <strong>（日语）</strong>.</li></ol><ol type="1" id="92bba04f-e75e-4f31-880d-8a3b64e0a914" class="numbered-list" start="140"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-44"><strong>^</strong></a><a href="https://mantan-web.jp/article/20231010dog00m200068000c.html">スナックバス江：高橋李依が明美に　テレビアニメ声優発表　タツ兄、森田も</a>. MANTANWEB. 2023-10-11 [2023-10-11]. （原始内容<a href="https://web.archive.org/web/20231012054552/https:/mantan-web.jp/article/20231010dog00m200068000c.html">存档</a>于2023-10-12） <strong>（日语）</strong>.</li></ol><ol type="1" id="1b02fc04-ddde-4452-9122-759effd0349c" class="numbered-list" start="141"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-45"><strong>^</strong></a><a href="https://natalie.mu/comic/news/545081">「望まぬ不死の冒険者」放送は来年1月から、本PVやOP・EDテーマアーティスト公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-10-15 [2023-10-15]. （原始内容<a href="https://web.archive.org/web/20231020151948/https:/natalie.mu/comic/news/545081">存档</a>于2023-10-20） <strong>（日语）</strong>.</li></ol><ol type="1" id="2690d980-dc3a-4113-a2af-aca7ecf43d19" class="numbered-list" start="142"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-46"><strong>^</strong></a>@cfvanguard_PR. <a href="https://twitter.com/cfvanguard_PR/status/1714258773400007052">TVアニメ カードファイト!! ヴァンガード Divinez</a> (推文). 2023-10-17 [2023-10-17] –通过<a href="https://zh.wikipedia.org/wiki/Twitter">Twitter</a> <strong>（日语）</strong>.</li></ol><ol type="1" id="b3195607-4589-425d-8203-1e77bdb8c606" class="numbered-list" start="143"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-47"><strong>^</strong></a><a href="https://natalie.mu/comic/news/546203">「愚かな天使は悪魔と踊る」PVに顔が蕩ける阿久津、頬を赤らめるリリー　OPも聴ける</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-10-23 [2023-10-23]. （原始内容<a href="https://web.archive.org/web/20231027185815/https:/natalie.mu/comic/news/546203">存档</a>于2023-10-27） <strong>（日语）</strong>.</li></ol><ol type="1" id="9db67089-21bd-49a7-90bc-d2c7f7e8efec" class="numbered-list" start="144"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-48"><strong>^</strong></a><a href="https://natalie.mu/comic/news/546192">アニメ「勇気爆発バーンブレイバーン」2024年1月放送、鈴木崚汰＆阿座上洋平ら出演</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-10-24 [2023-10-24]. （原始内容<a href="https://web.archive.org/web/20231028185708/https:/natalie.mu/comic/news/546192">存档</a>于2023-10-28） <strong>（日语）</strong>.</li></ol><ol type="1" id="eac205cf-5e86-4567-bac6-a5af45d99d14" class="numbered-list" start="145"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-49"><strong>^</strong></a><a href="https://natalie.mu/comic/news/546844">「魔法少女にあこがれて」に古賀葵、杉浦しおりら　OP流れるメインPV第1弾公開</a>. <a href="https://zh.wikipedia.org/wiki/Natalie_(%E7%B6%B2%E7%AB%99)">Comic Natalie</a>. 2023-10-27 [2023-10-27]. （原始内容<a href="https://web.archive.org/web/20231029181239/https:/natalie.mu/comic/news/546844">存档</a>于2023-10-29） <strong>（日语）</strong>.</li></ol><ol type="1" id="0398f80e-be9e-44ff-83aa-b4cd3ffd242f" class="numbered-list" start="146"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-50"><strong>^</strong></a><a href="https://natalie.mu/comic/news/549337">アニメ「闇芝居 十二期」2024年1月に放送決定、“ルール”にまつわる都市伝説描く</a>. <a href="https://zh.wikipedia.org/wiki/Comic_Natalie">Comic Natalie</a>. 2023-11-16 [2023-11-16] <strong>（日语）</strong>.</li></ol><ol type="1" id="bd323583-1f59-42b8-aae5-18ac157ebd88" class="numbered-list" start="147"><li><a href="https://zh.wikipedia.org/wiki/2024%E5%B9%B4%E6%97%A5%E6%9C%AC%E5%8B%95%E7%95%AB%E5%88%97%E8%A1%A8#cite_ref-51"><strong>^</strong></a><a href="https://sasapi-anime.com/news/article_006.html">TVアニメ「佐々木とピーちゃん」2024年1月放送開始！！キービジュアル＆ＰＶを公開！！ メインスタッフも公開！！</a>. 电视动画《佐佐木与文鸟小哔》官方网站. 2023-11-16 [2023-11-16] <strong>（日语）</strong>.</li></ol></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
